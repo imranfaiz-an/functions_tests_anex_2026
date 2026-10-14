@@ -1,0 +1,21 @@
+[project]
+name = "anex-presentation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "altair>=6.3.0",
+    "ipykernel>=7.4.0",
+    "marimo>=0.25.1",
+    "numpy>=2.5.4",
+    "pandas>=3.0.6",
+    "polars>=2.0.0",
+    "rpy2>=3.6.9",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.0",
+]
