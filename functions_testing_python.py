@@ -4,7 +4,7 @@ __generated_with = "0.25.1"
 app = marimo.App(width="medium")
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _():
     import marimo as mo
     import pandas as pd
@@ -20,10 +20,19 @@ def _(mo):
     mo.md(r"""
     # Writing Better Code Using **Functions** & **Tests**
     - Faizan Imran
-    - Data Science Intern - Modeling Team - Department of Finance (2026)
+    - Data Science Intern - __Modeling Team__ - Department of Finance (2026)
     - Current grad student at UChicago - majors: **Computer Science & Public Policy**
 
-    Breaking code into small, focused functions, where each part/function is responsible for doing one thing, can make programs significantly easier to understand, maintain, debug, and extend. I will discuss some of the best practices for breaking code into functions in both Python and R; the concepts, however, could be applied to any programming language. The talk will focus on how to approach “functionalizing” complex code and programs. The discussion will explore the benefits of taking a functional approach, as well as the drawbacks and challenges that can arise when code is not appropriately decomposed into reusable, single-purpose functions. I will then pivot to discuss how software testing can be done alongside functionalizing code to give us more confidence in its expected performance.
+    ## Agenda:
+    - What are functions?
+        - Types of functions
+            - Pure Functions
+            - Impure Functions
+    - Why write functions at all?
+    - When to write functions?
+    - Database Connection - Case Study
+    - How functions facilitate testing
+    - Unit Testing
     """)
     return
 
@@ -34,7 +43,9 @@ def _(mo):
         """
         Some of us might remember functions from Maths - they are formally defined as: _"A function from a set X to a set Y assigns to each element of X exactly one element of Y"_
 
-        It helps to imagine functions like machines, where when give the machine an input it returns a fixed output.
+        The same can logic can be applied to computer functions! A function can be thought of as a "reusable block of code that performs __a specific task__".
+
+        It helps to think of functions as a machine that receives as input and processes that input in some predetermined way and returns some output.
         """
     ).callout(kind="info", title="What is a function?")
     return
@@ -44,15 +55,16 @@ def _(mo):
 def _(mo):
     mo.md(r"""
     ## Why Functions?
-    Functions are a great way to increase our reach as Data Scientists - writing functions allows us to streamline processes, avoid redundancies and work on our organizational/team specific code base incrementally.
+    Functions are a great way to streamline work as Data Scientists/Analysts/Engineers - writing functions allows us to name processes, avoid redundancies and work on our organizational/team specific code base incrementally.
 
-    Some immediately useful features of writing code in functions can be[^1]:
-    - We can name functions so that they are easy to remember and communicate to others.
-    - Functions are easy to update; to make changes we would need to only update the code in one place. This makes our codebase much more easier to maintain in the long run.
-    - Functions make code modular, allowing us to reuse components - increasing our productivity over time.
-    - Help avoid copy/paste mistakes.
+    Some immediately useful features of writing code in functions are[^1][^2]:
+    - __Modularity__: Functions help remove redundancies and improve efficiency by making code modular.
+    - __Memory__: Function names are easy to remember and communicate. And the variable/objects defined inside of functions are not stored in memory aftear the function runs - saving computer memory!
+    - __Maintainability__: Functions are easy to update; to make changes we would need to only update the code in one place. This makes our codebase much more easier to maintain and expand in the long run.
+    - __Tests & Checks__: We can explicitly handle issues and edge cases when writing functions and they also make it much easier to write tests.
 
     [^1]: [Hadley Wickham - R for Data Science](https://r4ds.hadley.nz/functions.html)
+    [^2]: [Why Write Functions?](https://www.pyopensci.org/lessons/write-better-code/optimize-code/about-python-functions.html)
     """)
     return
 
@@ -60,7 +72,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(f"""
-    #### Example 1: Defining our first function
+    ### Example 1: Let's Look at a Function
 
     For example the function below prints 😲 and takes an integer as as input that determines how many times the emoji is printed.
     """)
@@ -106,7 +118,7 @@ def _(mo, print_astonished, slider):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    #### Instead of having to manually type in the emojis repeatedely - I can just write a function that does that for me!
+    Instead of having to manually type in the emojis repeatedely - I can just write a function that does that for me!
     """)
     return
 
@@ -162,9 +174,14 @@ def _(mo):
         When we install a library like Pandas and import it in our code it comes with a lot of functions that it's creators built for our use, for example:
         ```python
         import pandas as pd
-        pd.isna() # Detect missing values for an array-like object.
-        pd.unique() # Return unique values based on a hash table.
-        pd.pivot() # Return reshaped DataFrame organized by given index / column values.
+
+        df = pd.DataFrame()
+
+        df.isna() # Detect missing values for an array-like object.
+
+        df.unique() # Return unique values based on a hash table.
+
+        df.pivot() # Return reshaped DataFrame organized by given index / column values.
         ```
         and many many more. These functions do task that most of us working with data need to do. Simply importing a library that has functions that perform tasks we need to do make our life much easier!
         ---
@@ -188,10 +205,10 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    #### Example 2: Writing functions to automate redundant processes
-    While at DOF our team was accessing data by connecting to a database and since the database connection was a central part of everyone on our team I wrote a function that built the connection.
+    #### Example 2:
+    While at DOF our team was accessing data by connecting to a database and since the database connection was a central part of everyone's work almost all the scripts that everyone was writing had 8-10 lines of code that established the database connection.
 
-    Instead of writing 10-12 lines of code in every script this function allowed a single line access. Let's take a look at the function
+    So I wrote a function that built the connection for them! Instead of manually writing 10 lines of code in every script this function allowed a single line access.
     """)
     return
 
@@ -200,7 +217,7 @@ def _(mo):
 def _(mo):
     mo.md("""
     ```python
-    def connect_db(db_name: str = "test"):
+    def connect_db(db_name: str):
         "\""
         This function takes in the name of the database and establishes a connection
         with that database.
@@ -235,11 +252,62 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    Below is an example of code before the function was implemented - below we are establishing a connection to 2 different databases and it is obvious why this is such a strong case to implement a function!
+
+    ```python
+    db_name = "test"
+    load_dotenv(find_dotenv(f"C:/Users/{os.getlogin()}/.Renviron"))
+
+    connection_args = ["Driver={Oracle in OraClient19Home1};",
+                       f"DBQ={os.environ[f'{db_name}_path']};",
+                       f"DATABASE={os.environ[f'{db_name}_schema']};",
+                       f"UID={os.environ[f'{db_name}_username']};",
+                       f"PWD={os.environ[f'{db_name}_password']};",
+                       "Trusted_Connection=no;",
+                       "Port=1433"
+    ]
+    connection_string = "\".join(connection_args)
+    connection = pyodbc.connect(connection_string)
+
+    db_name_prod = "production"
+
+    connection_args_production = ["Driver={Oracle in OraClient19Home1};",
+                       f"DBQ={os.environ[f'{db_name_prod}_path']};",
+                       f"DATABASE={os.environ[f'{db_name_prod}_schema']};",
+                       f"UID={os.environ[f'{db_name_prod}_username']};",
+                       f"PWD={os.environ[f'{db_name_prod}_password']};",
+                       "Trusted_Connection=no;",
+                       "Port=1433"
+    ]
+    connection_string_prod = "\".join(connection_args_production)
+    connection_prod = pyodbc.connect(connection_string_prod)
+    ```
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     By adding this function one could get the connection the the database by just calling:
 
     ```python
-    connect_db()
+    test_connection = connect_db("test")
+    prod_connection = connect_db("test")
     ```
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ### Pending on Functions
+    - Defining inputs & outputs
+    - Functions should do one thing and do them well!
+    - Functions should assume no existing state - the only thing that matters is the input to the function
+    - Other examples of cases to write functions for - add charts!
+    - Why a function for do_analysis() is not scaleable!
     """)
     return
 
