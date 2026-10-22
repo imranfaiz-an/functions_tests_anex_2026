@@ -1,0 +1,4 @@
+.marimo-cell:focus-within {
+  background-color: #fff8dc;
+  border-color: #f0a500;
+}

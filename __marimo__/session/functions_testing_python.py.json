@@ -7,7 +7,7 @@
   "cells": [
     {
       "id": "Hbol",
-      "code_hash": "8d40d0544ab8430a24d3235b4372e1d5",
+      "code_hash": "49a5817de22d853ae2a5ec34c2a402b5",
       "outputs": [
         {
           "type": "data",
@@ -19,26 +19,13 @@
       "console": []
     },
     {
-      "id": "MJUe",
-      "code_hash": "1fde2999783bf31c85bf53d5e7daebb9",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"writing-better-code-using-functions-tests\">Writing Better Code Using <strong>Functions</strong> &amp; <strong>Tests</strong></h1>\n<ul>\n<li>Faizan Imran</li>\n<li>Data Science Intern - <strong>Modeling Team</strong> - Department of Finance (2026)</li>\n<li>Current grad student at UChicago - majors: <strong>Computer Science &amp; Public Policy</strong></li>\n</ul>\n<h2 id=\"agenda\">Agenda:</h2>\n<ul>\n<li>What are functions?<ul>\n<li>Types of functions<ul>\n<li>Pure Functions</li>\n<li>Impure Functions</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>Why write functions at all?</li>\n<li>When to write functions?</li>\n<li>Database Connection - Case Study</li>\n<li>How functions facilitate testing</li>\n<li>Unit Testing</li>\n</ul></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
       "id": "vblA",
-      "code_hash": "8d4660be927016eaccc09bf3edcde981",
+      "code_hash": "751abc2c9c20d12992191267b40cbd6b",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-callout-output data-html='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eSome of us might remember functions from Maths - they are formally defined as: &#92;u003cem&#92;u003e&#92;&quot;A function from a set X to a set Y assigns to each element of X exactly one element of Y&#92;&quot;&#92;u003c/em&#92;u003e&#92;u003c/span&#92;u003e&#92;n&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eThe same can logic can be applied to computer functions! A function can be thought of as a &#92;&quot;reusable block of code that performs &#92;u003cstrong&#92;u003ea specific task&#92;u003c/strong&#92;u003e&#92;&quot;.&#92;u003c/span&#92;u003e&#92;n&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eIt helps to think of functions as a machine that receives as input and processes that input in some predetermined way and returns some output.&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-kind='&quot;info&quot;' data-title='&quot;What is a function?&quot;'></marimo-callout-output>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"writing-better-code-using-functions-tests\">Writing Better Code Using <strong>Functions</strong> &amp; <strong>Tests</strong></h1>\n<ul>\n<li>Faizan Imran</li>\n<li>Data Science Intern - <strong>Modeling Team</strong> - Department of Finance (2026)</li>\n<li>Current grad student at UChicago - majors: <strong>Computer Science &amp; Public Policy</strong></li>\n</ul>\n<hr />\n<span class=\"paragraph\">Shout out and thanks to Claire Boyd (Data Scientist @ DOF), James Turk (Assistant Clinical Professor @ UChicago) &amp; Tara Sullivan (Director Data Science @ OTI) for their feedback on the material!</span></span>"
           }
         }
       ],
@@ -46,12 +33,12 @@
     },
     {
       "id": "bkHC",
-      "code_hash": "fc77cd4c895943a31fc2be7a637a2c30",
+      "code_hash": "9b1ed9f059f402164189b1169cff08ea",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"why-functions\">Why Functions?</h2>\n<span class=\"paragraph\">Functions are a great way to streamline work as Data Scientists/Analysts/Engineers - writing functions allows us to name processes, avoid redundancies and work on our organizational/team specific code base incrementally.</span>\n<span class=\"paragraph\">Some immediately useful features of writing code in functions are<sup id=\"fnref:676-1\"><a class=\"footnote-ref\" href=\"#fn:676-1\">1</a></sup><sup id=\"fnref:676-2\"><a class=\"footnote-ref\" href=\"#fn:676-2\">2</a></sup>:</span>\n<ul>\n<li><strong>Modularity</strong>: Functions help remove redundancies and improve efficiency by making code modular.</li>\n<li><strong>Memory</strong>: Function names are easy to remember and communicate. And the variable/objects defined inside of functions are not stored in memory aftear the function runs - saving computer memory!</li>\n<li><strong>Maintainability</strong>: Functions are easy to update; to make changes we would need to only update the code in one place. This makes our codebase much more easier to maintain and expand in the long run.</li>\n<li><strong>Tests &amp; Checks</strong>: We can explicitly handle issues and edge cases when writing functions and they also make it much easier to write tests.</li>\n</ul>\n<div class=\"footnote\">\n<hr />\n<ol>\n<li id=\"fn:676-1\"><a href=\"https://r4ds.hadley.nz/functions.html\" rel=\"noopener noreferrer\" target=\"_blank\">Hadley Wickham - R for Data Science</a>&#160;<a class=\"footnote-backref\" href=\"#fnref:676-1\" title=\"Jump back to footnote 1 in the text\">&#8617;</a></li>\n<li id=\"fn:676-2\"><a href=\"https://www.pyopensci.org/lessons/write-better-code/optimize-code/about-python-functions.html\" rel=\"noopener noreferrer\" target=\"_blank\">Why Write Functions?</a>&#160;<a class=\"footnote-backref\" href=\"#fnref:676-2\" title=\"Jump back to footnote 2 in the text\">&#8617;</a></li>\n</ol>\n</div></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"agenda\">Agenda:</h2>\n<ul>\n<li>What are functions?<ul>\n<li>Types of functions</li>\n</ul>\n</li>\n<li>Why write functions at all?</li>\n<li>When to write functions?</li>\n<li>Database Connection - Case Study</li>\n<li>Good practices for writing functions</li>\n<li>How functions facilitate testing</li>\n<li>Try/Except in Python </li>\n<li>Unit Testing</li>\n</ul></span>"
           }
         }
       ],
@@ -59,19 +46,32 @@
     },
     {
       "id": "lEQa",
-      "code_hash": "5d2850d30d2bdb6c5e63bc65e4155e67",
+      "code_hash": "070ab66a48e7675ec9e90f9befb31392",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"example-1-lets-look-at-a-function\">Example 1: Let's Look at a Function</h3>\n<span class=\"paragraph\">For example the function below prints \ud83d\ude32 and takes an integer as as input that determines how many times the emoji is printed.</span></span>"
+            "text/html": "<marimo-callout-output data-html='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003e&#92;&quot;A function is a callable unit of some software logic that has a pre-defined behavior and can be invoked any number of times&#92;&quot;&#92;u003csup id=&#92;&quot;fnref:11178-1&#92;&quot;&#92;u003e&#92;u003ca class=&#92;&quot;footnote-ref&#92;&quot; href=&#92;&quot;#fn:11178-1&#92;&quot;&#92;u003e1&#92;u003c/a&#92;u003e&#92;u003c/sup&#92;u003e.&#92;u003c/span&#92;u003e&#92;n&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eIt helps to think of functions as a machine that receives as input and processes that input in some predetermined way and returns some/expected output.&#92;u003c/span&#92;u003e&#92;n&#92;u003cdiv class=&#92;&quot;footnote&#92;&quot;&#92;u003e&#92;n&#92;u003chr /&#92;u003e&#92;n&#92;u003col&#92;u003e&#92;n&#92;u003cli id=&#92;&quot;fn:11178-1&#92;&quot;&#92;u003e&#92;u003ca href=&#92;&quot;https://en.wikipedia.org/wiki/Function_(computer_programming)&#92;&quot; rel=&#92;&quot;noopener noreferrer&#92;&quot; target=&#92;&quot;_blank&#92;&quot;&#92;u003eFunctions - Wiki&#92;u003c/a&#92;u003e&amp;#160;&#92;u003ca class=&#92;&quot;footnote-backref&#92;&quot; href=&#92;&quot;#fnref:11178-1&#92;&quot; title=&#92;&quot;Jump back to footnote 1 in the text&#92;&quot;&#92;u003e&amp;#8617;&#92;u003c/a&#92;u003e&#92;u003c/li&#92;u003e&#92;n&#92;u003c/ol&#92;u003e&#92;n&#92;u003c/div&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-kind='&quot;info&quot;' data-title='&quot;What is a function?&quot;'></marimo-callout-output>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "PKri",
+      "id": "Xref",
+      "code_hash": "d5ce52688ad24fe409d793b878501f5a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"example-lets-write-a-function\">Example: Let's Write a Function</h3>\n<span class=\"paragraph\">For example the function below prints \ud83d\ude32 and takes an integer as as input that determines how many times the emoji is printed.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
       "code_hash": "9596e9e48ad4db5013da4512a220b3ac",
       "outputs": [
         {
@@ -84,7 +84,7 @@
       "console": []
     },
     {
-      "id": "Xref",
+      "id": "BYtC",
       "code_hash": "3dc5eab4ad04a865c1e5891f16365fc8",
       "outputs": [
         {
@@ -97,33 +97,20 @@
       "console": []
     },
     {
-      "id": "SFPL",
+      "id": "RGSE",
       "code_hash": "539d7f52e86d0b32ebe86bec3dc56027",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='PKri-0' random-id='719eefa5-f2c0-93ba-283d-60b1a95a6679'><marimo-slider data-initial-value='0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003ch2 id=&#92;&quot;astonishment-level&#92;&quot;&#92;u003eAstonishment Level:&#92;u003c/h2&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0' data-stop='25' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='SFPL-0' random-id='9bab4924-e15b-c651-9608-d53237e7587f'><marimo-slider data-initial-value='0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003ch2 id=&#92;&quot;astonishment-level&#92;&quot;&#92;u003eAstonishment Level:&#92;u003c/h2&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0' data-stop='25' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "BYtC",
-      "code_hash": "6e459e1957ebebb4e25ebf7f1ad0b140",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"_1\"></h1></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "RGSE",
+      "id": "emfo",
       "code_hash": "9df10400c0a3fc9094e1424ae2af7923",
       "outputs": [
         {
@@ -137,19 +124,136 @@
     },
     {
       "id": "Kclp",
-      "code_hash": "8e23bff210fa80f6882ac73be331e42f",
+      "code_hash": "6e459e1957ebebb4e25ebf7f1ad0b140",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"most-of-us-already-use-functions-all-the-time\">Most of us already use functions all the time!</h3>\n<span class=\"paragraph\">Both Python &amp; R have tons of <strong>built-in functions</strong> that we use all the time.\nOn top of that, both languages give us access to <strong>libraries/packages</strong>, where\nsomeone else already wrote a bunch of functions and published them for us to use!</span>\n<span class=\"paragraph\">Here are some common built-in functions in Python:</span></span><marimo-ui-element object-id='Kclp-0' random-id='eb105332-a0d1-ad0a-0f2a-61c6ea2b561a'><marimo-tabs data-initial-value='&quot;&quot;' data-label='null' data-tabs='[&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eprint()&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;,&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003esum()&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;,&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003elist()&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;]' data-orientation='&quot;horizontal&quot;'><div data-kind='tab'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><div class=\"language-python codehilite\"><pre><span></span><code><span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s2\">\"Hello!\"</span><span class=\"p\">)</span>\n</code></pre></div>\n<code>print()</code> shows text on the screen.</span>\n<span class=\"paragraph\">Fun fact: The <em>print()</em> function doesn't actually <em>return</em> anything, so if we store it's output in an object it will just be <code>None</code>.</span></span></div><div data-kind='tab'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><div class=\"language-python codehilite\"><pre><span></span><code><span class=\"nb\">sum</span><span class=\"p\">([</span><span class=\"mi\">3</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">,</span> <span class=\"mi\">4</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">,</span> <span class=\"mi\">5</span><span class=\"p\">])</span>\n</code></pre></div>\n<code>sum()</code> add things up.</span>\n<span class=\"paragraph\"><strong>Returns:</strong> <code>14</code></span></span></div><div data-kind='tab'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><div class=\"language-python codehilite\"><pre><span></span><code><span class=\"nb\">list</span><span class=\"p\">(</span><span class=\"s2\">\"hello\"</span><span class=\"p\">)</span>\n</code></pre></div>\n<code>list()</code> turns things into a list. A word becomes a list of its letters!</span>\n<span class=\"paragraph\"><strong>Returns:</strong> <code>['h', 'e', 'l', 'l', 'o']</code></span></span></div></marimo-tabs></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><hr />\n<span class=\"paragraph\">When we install a library like Pandas and import it in our code it comes with a lot of functions that it's creators built for our use, for example:\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"kn\">import</span><span class=\"w\"> </span><span class=\"nn\">pandas</span><span class=\"w\"> </span><span class=\"k\">as</span><span class=\"w\"> </span><span class=\"nn\">pd</span>\n\n<span class=\"n\">df</span> <span class=\"o\">=</span> <span class=\"n\">pd</span><span class=\"o\">.</span><span class=\"n\">DataFrame</span><span class=\"p\">()</span>\n\n<span class=\"n\">df</span><span class=\"o\">.</span><span class=\"n\">isna</span><span class=\"p\">()</span> <span class=\"c1\"># Detect missing values for an array-like object.</span>\n\n<span class=\"n\">df</span><span class=\"o\">.</span><span class=\"n\">unique</span><span class=\"p\">()</span> <span class=\"c1\"># Return unique values based on a hash table.</span>\n\n<span class=\"n\">df</span><span class=\"o\">.</span><span class=\"n\">pivot</span><span class=\"p\">()</span> <span class=\"c1\"># Return reshaped DataFrame organized by given index / column values.</span>\n</code></pre></div>\nand many many more. These functions do task that most of us working with data need to do. Simply importing a library that has functions that perform tasks we need to do make our life much easier!</span>\n<hr />\n<h3 id=\"combining-functions-into-a-package\">Combining Functions into a Package</h3>\n<span class=\"paragraph\">Once we get comfortable with writing and managing our own functions we can also bundle them up in a package and publish them for others to use. My team at DOF did just that with the package <a href=\"https://github.com/nycdepartmentoffinance/assessNYC\" rel=\"noopener noreferrer\" target=\"_blank\">AssessNYC</a>. This package contains a bunch of functions that helps our team do all sorts of modelling/EDA work and it also speaks to the value of investing in functions early in local government because our workflows require (for the most part) having a base set of utilities/tasks that the Data Scientists/Engineers work on to improve and expand on over time!</span></span></div>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"_1\"></h1></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "emfo",
+      "id": "oyJT",
+      "code_hash": "4485fe09ccbf0c90f4cc3fb9d249a934",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"types-of-functions\">Types of Functions:</h2>\n<h3 id=\"pure-functions\">Pure Functions:</h3>\n<span class=\"paragraph\">Functions that for a given input return the same output everytime and have no side effects<sup id=\"fnref:11213-1\"><a class=\"footnote-ref\" href=\"#fn:11213-1\">1</a></sup>. </span>\n<span class=\"paragraph\">Following is an example of a pure function: </span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"k\">def</span><span class=\"w\"> </span><span class=\"nf\">add_list</span><span class=\"p\">(</span><span class=\"n\">numbers</span><span class=\"p\">:</span> <span class=\"p\">[</span><span class=\"nb\">int</span><span class=\"p\">])</span> <span class=\"o\">-&gt;</span> <span class=\"nb\">int</span><span class=\"p\">:</span>\n<span class=\"w\">    </span><span class=\"sd\">'''Take a list of integers and return their sum'''</span>\n    <span class=\"n\">total</span> <span class=\"o\">=</span> <span class=\"mi\">0</span> <span class=\"c1\"># total here is a Local Variable</span>\n    <span class=\"k\">for</span> <span class=\"n\">i</span> <span class=\"ow\">in</span> <span class=\"n\">numbers</span><span class=\"p\">:</span>\n        <span class=\"n\">total</span> <span class=\"o\">+=</span> <span class=\"n\">i</span>\n    <span class=\"k\">return</span> <span class=\"n\">total</span> <span class=\"c1\"># ouput with same input will never change</span>\n</code></pre></div>\n<h3 id=\"impure-functions\">Impure Functions:</h3>\n<span class=\"paragraph\">Functions that alter something outside of their scope or that have any side effects.</span>\n<span class=\"paragraph\">An example of impure function: </span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"n\">count</span> <span class=\"o\">=</span> <span class=\"mi\">0</span> <span class=\"c1\"># count is a global variable</span>\n\n<span class=\"k\">def</span><span class=\"w\"> </span><span class=\"nf\">increase_count</span><span class=\"p\">():</span>\n    <span class=\"k\">global</span> <span class=\"n\">count</span>\n    <span class=\"n\">count</span> <span class=\"o\">+=</span> <span class=\"mi\">1</span>\n    <span class=\"k\">return</span> <span class=\"n\">count</span> <span class=\"c1\"># will return a different value each time called</span>\n</code></pre></div>\n<div class=\"footnote\">\n<hr />\n<ol>\n<li id=\"fn:11213-1\">A side effect is anything that has an observable effect other than its primary effect of reading the value of its arguments and returning a value. Side effects include: modification of non-local variables, doing I/O operations etc.&#160;<a class=\"footnote-backref\" href=\"#fnref:11213-1\" title=\"Jump back to footnote 1 in the text\">&#8617;</a></li>\n</ol>\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nTiw",
+      "code_hash": "2c088a6ea7f618a8f9638a5622fed841",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='nTiw-0' random-id='aac9caf5-8b76-e26c-8dbb-459b26cada9a'><marimo-text data-initial-value='&quot;1, 2, 3&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eNumbers (comma-separated):&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-kind='&quot;text&quot;' data-full-width='false' data-disabled='false' data-debounce='true'></marimo-text></marimo-ui-element><marimo-ui-element object-id='nTiw-1' random-id='ac60ee86-bb70-f73c-42ac-6824e32a9d01'><marimo-button data-initial-value='0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eCall add_list() again&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "pbyN",
+      "code_hash": "4af81ff5aeaa65eeb4b44d9721c67293",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><code>add_list([1, 2, 3])</code> \u2192 <strong>6</strong></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iJtu",
+      "code_hash": "3609080ca33d6c7cedd4624c5de48e4e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='iJtu-0' random-id='24be28d2-972d-db93-5b97-98f8a479e163'><marimo-button data-initial-value='0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eCall increase_count()&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iupR",
+      "code_hash": "edb17c0be1efc207315338995fdf5bd3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><code>increase_count()</code> \u2192 <strong>5</strong></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "4cdf20aba83894a8b0871a293bc318bb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"why-functions\">Why Functions?</h2>\n<span class=\"paragraph\">Functions are a great way to streamline work as Data Scientists/Analysts/Engineers - writing functions allows us to name processes, avoid redundancies and work on our organizational/team specific code base incrementally.</span>\n<span class=\"paragraph\">Some immediately useful features of writing code in functions are<sup id=\"fnref:11162-1\"><a class=\"footnote-ref\" href=\"#fn:11162-1\">1</a></sup><sup id=\"fnref:11162-2\"><a class=\"footnote-ref\" href=\"#fn:11162-2\">2</a></sup>:</span>\n<ul>\n<li><strong>Modularity</strong>: Functions help remove redundancies in code and allow reuse of code</li>\n<li><strong>Decomposition</strong>: We can break a complex task into more managable steps - where each function builds on the prior. This also allows different team members to work on a different part of the same problem in parallel</li>\n<li><strong>Memory</strong>: Descriptive function names are easy to remember and communicate. And the variable/objects defined inside of functions are not stored in memory aftear the function runs - saving computer memory as well!</li>\n<li><strong>Maintainability</strong>: Functions are easy to update; to make changes we would need to only update the code in one place. This makes our codebase much more easier to maintain and expand in the long run</li>\n<li><strong>Tests &amp; Checks</strong>: We can explicitly handle issues and edge cases when writing functions and they also make it much easier to write tests</li>\n</ul>\n<div class=\"footnote\">\n<hr />\n<ol>\n<li id=\"fn:11162-1\"><a href=\"https://r4ds.hadley.nz/functions.html\" rel=\"noopener noreferrer\" target=\"_blank\">Hadley Wickham - R for Data Science</a>&#160;<a class=\"footnote-backref\" href=\"#fnref:11162-1\" title=\"Jump back to footnote 1 in the text\">&#8617;</a></li>\n<li id=\"fn:11162-2\"><a href=\"https://www.pyopensci.org/lessons/write-better-code/optimize-code/about-python-functions.html\" rel=\"noopener noreferrer\" target=\"_blank\">Why Write Functions?</a>&#160;<a class=\"footnote-backref\" href=\"#fnref:11162-2\" title=\"Jump back to footnote 2 in the text\">&#8617;</a></li>\n</ol>\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "cd72020fdbd0118b97cbdfa352539c85",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"most-of-us-already-use-functions-all-the-time\">Most of us already use functions all the time!</h3>\n<span class=\"paragraph\">Both Python &amp; R have tons of <strong>built-in functions</strong> that we use all the time.\nOn top of that, both languages give us access to <strong>libraries/packages</strong>, where\nsomeone else already wrote a bunch of functions and published them for us to use!</span>\n<span class=\"paragraph\">Here are some common built-in functions in Python:</span></span><marimo-ui-element object-id='Hstk-0' random-id='94279f4e-ddf0-d075-fd72-4ea29f66e301'><marimo-tabs data-initial-value='&quot;&quot;' data-label='null' data-tabs='[&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eprint()&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;,&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003esum()&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;,&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003elist()&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;]' data-orientation='&quot;horizontal&quot;'><div data-kind='tab'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><div class=\"language-python codehilite\"><pre><span></span><code><span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s2\">\"Hello!\"</span><span class=\"p\">)</span>\n</code></pre></div>\n<code>print()</code> shows text on the screen.</span>\n<span class=\"paragraph\">Fun fact: The <em>print()</em> function doesn't actually <em>return</em> anything, so if we store it's output in an object it will just be <code>None</code>.\nPrint is also a very commonly used <em>impure</em> function!</span></span></div><div data-kind='tab'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><div class=\"language-python codehilite\"><pre><span></span><code><span class=\"nb\">sum</span><span class=\"p\">([</span><span class=\"mi\">3</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">,</span> <span class=\"mi\">4</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">,</span> <span class=\"mi\">5</span><span class=\"p\">])</span>\n</code></pre></div>\n<code>sum()</code> add things up.</span>\n<span class=\"paragraph\"><strong>Returns:</strong> <code>14</code></span></span></div><div data-kind='tab'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><div class=\"language-python codehilite\"><pre><span></span><code><span class=\"nb\">list</span><span class=\"p\">(</span><span class=\"s2\">\"hello\"</span><span class=\"p\">)</span>\n</code></pre></div>\n<code>list()</code> turns things into a list. A word becomes a list of its letters!</span>\n<span class=\"paragraph\"><strong>Returns:</strong> <code>['h', 'e', 'l', 'l', 'o']</code></span></span></div></marimo-tabs></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><hr />\n<span class=\"paragraph\">When we install a library like Pandas and import it in our code it comes with a lot of functions that it's creators built for our use, for example:\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"kn\">import</span><span class=\"w\"> </span><span class=\"nn\">pandas</span><span class=\"w\"> </span><span class=\"k\">as</span><span class=\"w\"> </span><span class=\"nn\">pd</span>\n\n<span class=\"n\">df</span> <span class=\"o\">=</span> <span class=\"n\">pd</span><span class=\"o\">.</span><span class=\"n\">DataFrame</span><span class=\"p\">({</span><span class=\"s2\">\"dept\"</span><span class=\"p\">:[</span><span class=\"s2\">\"dof\"</span><span class=\"p\">,</span> <span class=\"s2\">\"dot\"</span><span class=\"p\">,</span> <span class=\"s2\">\"dcp\"</span><span class=\"p\">],</span> <span class=\"s2\">\"city\"</span><span class=\"p\">:</span> <span class=\"p\">[</span><span class=\"s2\">\"nyc\"</span><span class=\"p\">,</span> <span class=\"s2\">\"nyc\"</span><span class=\"p\">,</span> <span class=\"s2\">\"nyc\"</span><span class=\"p\">]})</span>\n\n<span class=\"n\">df</span><span class=\"o\">.</span><span class=\"n\">isna</span><span class=\"p\">()</span> <span class=\"c1\"># Detect missing values for an array-like object.</span>\n<span class=\"n\">df</span><span class=\"o\">.</span><span class=\"n\">head</span><span class=\"p\">()</span> <span class=\"c1\"># Return reshaped DataFrame organized by given index / column values.</span>\n</code></pre></div>\nand many many more. These functions do task that most of us working with data need to do. Simply importing a library that has functions that perform tasks we need to do make our life much easier!</span></span></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LTgO",
+      "code_hash": "f63f201ebea9b69050ba0cac584cb3f5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"combining-functions-into-a-package\">Combining Functions into a Package</h3>\n<span class=\"paragraph\">Once we get comfortable with writing and managing our own functions we can also bundle them up in a package and publish them for others to use. My team at DOF did just that with the package <a href=\"https://github.com/nycdepartmentoffinance/assessNYC\" rel=\"noopener noreferrer\" target=\"_blank\">AssessNYC</a>. This package contains a bunch of functions that helps our team do all sorts of modelling/EDA work and it also speaks to the value of investing in functions early in local government because our workflows require (for the most part) having a base set of utilities/tasks that the Data Scientists/Engineers work on to improve and expand on over time!</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bRCA",
+      "code_hash": "9ea348624412eee4043ee0759601aaf5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><hr />\n<h2 id=\"break-questions\">break - Questions?</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
       "code_hash": "c06f26af9f927c2e5fe57b0b46974c6a",
       "outputs": [
         {
@@ -162,26 +266,13 @@
       "console": []
     },
     {
-      "id": "Hstk",
-      "code_hash": "d2d8d6ae78c60f02a14318e101c4bc2e",
+      "id": "ROlb",
+      "code_hash": "31312004ca8c4aa1df5da550d8ad7e34",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h4 id=\"example-2\">Example 2:</h4>\n<span class=\"paragraph\">While at DOF our team was accessing data by connecting to a database and since the database connection was a central part of everyone's work almost all the scripts that everyone was writing had 8-10 lines of code that established the database connection.</span>\n<span class=\"paragraph\">So I wrote a function that built the connection for them! Instead of manually writing 10 lines of code in every script this function allowed a single line access.</span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "nWHF",
-      "code_hash": "b2e69ea1b54eec21fd96b94f095f845d",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div class=\"language-python codehilite\"><pre><span></span><code><span class=\"k\">def</span><span class=\"w\"> </span><span class=\"nf\">connect_db</span><span class=\"p\">(</span><span class=\"n\">db_name</span><span class=\"p\">:</span> <span class=\"nb\">str</span><span class=\"p\">):</span>\n<span class=\"w\">    </span><span class=\"sd\">\"\"\"</span>\n<span class=\"sd\">    This function takes in the name of the database and establishes a connection</span>\n<span class=\"sd\">    with that database.</span>\n\n<span class=\"sd\">    Input:</span>\n\n<span class=\"sd\">    - db_name: (str) the name of the database to connect to</span>\n\n<span class=\"sd\">    Returns:</span>\n\n<span class=\"sd\">    - A pyodbc.Connection object which we can use to query our database</span>\n<span class=\"sd\">    \"\"\"</span>\n\n    <span class=\"c1\"># the following line just loads in the .Renviron file that contains sensitive information</span>\n    <span class=\"c1\"># like passwords needed to connect to the database</span>\n\n    <span class=\"n\">load_dotenv</span><span class=\"p\">(</span><span class=\"n\">find_dotenv</span><span class=\"p\">(</span><span class=\"sa\">f</span><span class=\"s2\">\"C:/Users/</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">getlogin</span><span class=\"p\">()</span><span class=\"si\">}</span><span class=\"s2\">/.Renviron\"</span><span class=\"p\">))</span>\n\n    <span class=\"n\">connection_args</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"s2\">\"Driver={Oracle in OraClient19Home1};\"</span><span class=\"p\">,</span>\n                       <span class=\"sa\">f</span><span class=\"s2\">\"DBQ=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_path'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                       <span class=\"sa\">f</span><span class=\"s2\">\"DATABASE=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_schema'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                       <span class=\"sa\">f</span><span class=\"s2\">\"UID=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_username'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                       <span class=\"sa\">f</span><span class=\"s2\">\"PWD=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_password'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                       <span class=\"s2\">\"Trusted_Connection=no;\"</span><span class=\"p\">,</span>\n                       <span class=\"s2\">\"Port=1433\"</span>\n    <span class=\"p\">]</span>\n    <span class=\"n\">connection_string</span> <span class=\"o\">=</span> <span class=\"s2\">\"\"</span><span class=\"o\">.</span><span class=\"n\">join</span><span class=\"p\">(</span><span class=\"n\">connection_args</span><span class=\"p\">)</span>\n    <span class=\"k\">return</span> <span class=\"n\">pyodbc</span><span class=\"o\">.</span><span class=\"n\">connect</span><span class=\"p\">(</span><span class=\"n\">connection_string</span><span class=\"p\">)</span>\n</code></pre></div></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h4 id=\"code-we-used-at-dof-to-connect-to-our-databases\">Code we used at DOF to connect to our databases</h4>\n<span class=\"paragraph\">The code chunk below was how database connections were being made in almost all scripts - let's discuss why this is such a strong case to implement a function!</span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"n\">db_name</span> <span class=\"o\">=</span> <span class=\"s2\">\"test\"</span>\n<span class=\"n\">load_dotenv</span><span class=\"p\">(</span><span class=\"n\">find_dotenv</span><span class=\"p\">(</span><span class=\"sa\">f</span><span class=\"s2\">\"C:/Users/</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">getlogin</span><span class=\"p\">()</span><span class=\"si\">}</span><span class=\"s2\">/.Renviron\"</span><span class=\"p\">))</span>\n\n<span class=\"n\">connection_args</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"s2\">\"Driver={Oracle in OraClient19Home1};\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"DBQ=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_path'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"DATABASE=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_schema'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"UID=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_username'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"PWD=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_password'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"s2\">\"Trusted_Connection=no;\"</span><span class=\"p\">,</span>\n                   <span class=\"s2\">\"Port=1433\"</span>\n<span class=\"p\">]</span>\n<span class=\"n\">connection_string</span> <span class=\"o\">=</span> <span class=\"s2\">\"</span><span class=\"se\">\\\"</span><span class=\"s2\">.join(connection_args)</span>\n<span class=\"n\">connection</span> <span class=\"o\">=</span> <span class=\"n\">pyodbc</span><span class=\"o\">.</span><span class=\"n\">connect</span><span class=\"p\">(</span><span class=\"n\">connection_string</span><span class=\"p\">)</span>\n\n<span class=\"n\">db_name_prod</span> <span class=\"o\">=</span> <span class=\"s2\">\"production\"</span>\n\n<span class=\"n\">connection_args_production</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"s2\">\"Driver={Oracle in OraClient19Home1};\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"DBQ=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name_prod</span><span class=\"si\">}</span><span class=\"s1\">_path'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"DATABASE=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name_prod</span><span class=\"si\">}</span><span class=\"s1\">_schema'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"UID=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name_prod</span><span class=\"si\">}</span><span class=\"s1\">_username'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"PWD=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name_prod</span><span class=\"si\">}</span><span class=\"s1\">_password'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"s2\">\"Trusted_Connection=no;\"</span><span class=\"p\">,</span>\n                   <span class=\"s2\">\"Port=1433\"</span>\n<span class=\"p\">]</span>\n<span class=\"n\">connection_string_prod</span> <span class=\"o\">=</span> <span class=\"s2\">\"</span><span class=\"se\">\\\"</span><span class=\"s2\">.join(connection_args_production)</span>\n<span class=\"n\">connection_prod</span> <span class=\"o\">=</span> <span class=\"n\">pyodbc</span><span class=\"o\">.</span><span class=\"n\">connect</span><span class=\"p\">(</span><span class=\"n\">connection_string_prod</span><span class=\"p\">)</span>\n</code></pre></div></span>"
           }
         }
       ],
@@ -189,12 +280,12 @@
     },
     {
       "id": "iLit",
-      "code_hash": "1ebf728c65b7d2752cdba00b790b5652",
+      "code_hash": "217b140b2c72c340c2a04c28b955fbff",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Below is an example of code before the function was implemented - below we are establishing a connection to 2 different databases and it is obvious why this is such a strong case to implement a function!</span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"n\">db_name</span> <span class=\"o\">=</span> <span class=\"s2\">\"test\"</span>\n<span class=\"n\">load_dotenv</span><span class=\"p\">(</span><span class=\"n\">find_dotenv</span><span class=\"p\">(</span><span class=\"sa\">f</span><span class=\"s2\">\"C:/Users/</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">getlogin</span><span class=\"p\">()</span><span class=\"si\">}</span><span class=\"s2\">/.Renviron\"</span><span class=\"p\">))</span>\n\n<span class=\"n\">connection_args</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"s2\">\"Driver={Oracle in OraClient19Home1};\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"DBQ=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_path'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"DATABASE=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_schema'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"UID=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_username'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"PWD=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_password'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"s2\">\"Trusted_Connection=no;\"</span><span class=\"p\">,</span>\n                   <span class=\"s2\">\"Port=1433\"</span>\n<span class=\"p\">]</span>\n<span class=\"n\">connection_string</span> <span class=\"o\">=</span> <span class=\"s2\">\"</span><span class=\"se\">\\\"</span><span class=\"s2\">.join(connection_args)</span>\n<span class=\"n\">connection</span> <span class=\"o\">=</span> <span class=\"n\">pyodbc</span><span class=\"o\">.</span><span class=\"n\">connect</span><span class=\"p\">(</span><span class=\"n\">connection_string</span><span class=\"p\">)</span>\n\n<span class=\"n\">db_name_prod</span> <span class=\"o\">=</span> <span class=\"s2\">\"production\"</span>\n\n<span class=\"n\">connection_args_production</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"s2\">\"Driver={Oracle in OraClient19Home1};\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"DBQ=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name_prod</span><span class=\"si\">}</span><span class=\"s1\">_path'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"DATABASE=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name_prod</span><span class=\"si\">}</span><span class=\"s1\">_schema'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"UID=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name_prod</span><span class=\"si\">}</span><span class=\"s1\">_username'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"sa\">f</span><span class=\"s2\">\"PWD=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name_prod</span><span class=\"si\">}</span><span class=\"s1\">_password'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                   <span class=\"s2\">\"Trusted_Connection=no;\"</span><span class=\"p\">,</span>\n                   <span class=\"s2\">\"Port=1433\"</span>\n<span class=\"p\">]</span>\n<span class=\"n\">connection_string_prod</span> <span class=\"o\">=</span> <span class=\"s2\">\"</span><span class=\"se\">\\\"</span><span class=\"s2\">.join(connection_args_production)</span>\n<span class=\"n\">connection_prod</span> <span class=\"o\">=</span> <span class=\"n\">pyodbc</span><span class=\"o\">.</span><span class=\"n\">connect</span><span class=\"p\">(</span><span class=\"n\">connection_string_prod</span><span class=\"p\">)</span>\n</code></pre></div></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h4 id=\"functionalizing\">Functionalizing:</h4>\n<span class=\"paragraph\">The function below achieves a lot of what we discussed above on the advantages of functionalizing code!</span></span>"
           }
         }
       ],
@@ -202,25 +293,12 @@
     },
     {
       "id": "ZHCJ",
-      "code_hash": "5d04e4d18480b9543e7bdd8de37dbc53",
+      "code_hash": "8d08cd24cceda659152fa1412bf73b24",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">By adding this function one could get the connection the the database by just calling:</span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"n\">test_connection</span> <span class=\"o\">=</span> <span class=\"n\">connect_db</span><span class=\"p\">(</span><span class=\"s2\">\"test\"</span><span class=\"p\">)</span>\n<span class=\"n\">prod_connection</span> <span class=\"o\">=</span> <span class=\"n\">connect_db</span><span class=\"p\">(</span><span class=\"s2\">\"test\"</span><span class=\"p\">)</span>\n</code></pre></div></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "ROlb",
-      "code_hash": "efb4ccf3654cf13c7acec2b716c90183",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pending-on-functions\">Pending on Functions</h3>\n<ul>\n<li>Defining inputs &amp; outputs</li>\n<li>Functions should do one thing and do them well!</li>\n<li>Functions should assume no existing state - the only thing that matters is the input to the function</li>\n<li>Other examples of cases to write functions for - add charts!</li>\n<li>Why a function for do_analysis() is not scaleable!</li>\n</ul></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div class=\"language-python codehilite\"><pre><span></span><code><span class=\"k\">def</span><span class=\"w\"> </span><span class=\"nf\">connect_db</span><span class=\"p\">(</span><span class=\"n\">db_name</span><span class=\"p\">:</span> <span class=\"nb\">str</span><span class=\"p\">):</span>\n<span class=\"w\">    </span><span class=\"sd\">\"\"\"</span>\n<span class=\"sd\">    This function takes in the name of the database and establishes a connection</span>\n<span class=\"sd\">    with that database.</span>\n\n<span class=\"sd\">    Input:</span>\n\n<span class=\"sd\">    - db_name: (str) the name of the database to connect to</span>\n\n<span class=\"sd\">    Returns:</span>\n\n<span class=\"sd\">    - A pyodbc.Connection object which we can use to query our database</span>\n<span class=\"sd\">    \"\"\"</span>\n\n    <span class=\"n\">load_dotenv</span><span class=\"p\">(</span><span class=\"n\">find_dotenv</span><span class=\"p\">(</span><span class=\"sa\">f</span><span class=\"s2\">\"C:/Users/</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">getlogin</span><span class=\"p\">()</span><span class=\"si\">}</span><span class=\"s2\">/.Renviron\"</span><span class=\"p\">))</span>\n\n    <span class=\"n\">connection_args</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"s2\">\"Driver={Oracle in OraClient19Home1};\"</span><span class=\"p\">,</span>\n                       <span class=\"sa\">f</span><span class=\"s2\">\"DBQ=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_path'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                       <span class=\"sa\">f</span><span class=\"s2\">\"DATABASE=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_schema'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                       <span class=\"sa\">f</span><span class=\"s2\">\"UID=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_username'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                       <span class=\"sa\">f</span><span class=\"s2\">\"PWD=</span><span class=\"si\">{</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"sa\">f</span><span class=\"s1\">'</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s1\">_password'</span><span class=\"p\">]</span><span class=\"si\">}</span><span class=\"s2\">;\"</span><span class=\"p\">,</span>\n                       <span class=\"s2\">\"Trusted_Connection=no;\"</span><span class=\"p\">,</span>\n                       <span class=\"s2\">\"Port=1433\"</span>\n    <span class=\"p\">]</span>\n    <span class=\"n\">connection_string</span> <span class=\"o\">=</span> <span class=\"s2\">\"\"</span><span class=\"o\">.</span><span class=\"n\">join</span><span class=\"p\">(</span><span class=\"n\">connection_args</span><span class=\"p\">)</span>\n\n    <span class=\"k\">return</span> <span class=\"n\">pyodbc</span><span class=\"o\">.</span><span class=\"n\">connect</span><span class=\"p\">(</span><span class=\"n\">connection_string</span><span class=\"p\">)</span>\n</code></pre></div></span>"
           }
         }
       ],
@@ -228,25 +306,64 @@
     },
     {
       "id": "qnkX",
-      "code_hash": "9126a473d57a1a53ea7d67163fdb3c62",
+      "code_hash": "7ce6ac30b1b428d6e753f1cac18a2513",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"testing\">Testing</h2>\n<ul>\n<li>Go over what testing is - while building on the database connection example</li>\n</ul></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">By adding this function one could get the connection the the databases by just calling:</span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"n\">test_connection</span> <span class=\"o\">=</span> <span class=\"n\">connect_db</span><span class=\"p\">(</span><span class=\"s2\">\"test\"</span><span class=\"p\">)</span>\n<span class=\"n\">prod_connection</span> <span class=\"o\">=</span> <span class=\"n\">connect_db</span><span class=\"p\">(</span><span class=\"s2\">\"test\"</span><span class=\"p\">)</span>\n</code></pre></div></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "TqIu",
-      "code_hash": "35dea9d883fdd20e6fd5cb5d7e2e2bb5",
+      "id": "recB",
+      "code_hash": "265b130f5f09f6a80fbb8089e26d752e",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"in-code-exception-handling\">In-Code Exception Handling</h3>\n<span class=\"paragraph\">Writing functions in such a way does not just reduce redundancies it also helps consolidate processes and a well written function can catch an input errors upfront. And adding useful <code>try</code> <code>except</code> statements in our function we can easily avoid some expected mistakes.</span>\n<span class=\"paragraph\">Going back to the earlier example if I know that we only have 3 available databases namely <strong>test, prod, &amp; staging</strong> I can add this to my code:</span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"k\">try</span><span class=\"p\">:</span>\n    <span class=\"k\">if</span> <span class=\"n\">db_name</span> <span class=\"ow\">not</span> <span class=\"ow\">in</span> <span class=\"p\">[</span><span class=\"s2\">\"test\"</span><span class=\"p\">,</span> <span class=\"s2\">\"prod\"</span><span class=\"p\">,</span> <span class=\"s2\">\"staging\"</span><span class=\"p\">]:</span>\n        <span class=\"k\">raise</span> <span class=\"ne\">ValueError</span><span class=\"p\">(</span>\n            <span class=\"sa\">f</span><span class=\"s2\">\"</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s2\"> is not a valid database that our team has access to!\"</span>\n            <span class=\"s2\">\"Try one of the following: 'test', 'staging', 'prod'\"</span>\n        <span class=\"p\">)</span>\n</code></pre></div>\n<span class=\"paragraph\">This update would make our function look like this:</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"practices-to-keep-in-mind-when-writing-functions\">Practices to Keep in Mind When Writing Functions</h2>\n<h3 id=\"define-the-purpose-of-the-function-clearly\">Define the purpose of the function clearly</h3>\n<span class=\"paragraph\"><strong>Functions should ideally do one thing and do it well!</strong> It does not really help to have a function that is doing many different things - at that point there really isn't an advantage of using functions over imperative programming.</span>\n<span class=\"paragraph\">For instance say we want to work on getting some analysis done for a new tax system being proposed on high value properties. One way to do this would be to just start writing code line by line and hope it works. What the functional approach would argue for is a clear breakdown of tasks. </span>\n<span class=\"paragraph\">For instance we could break this problem down by writing the following functions:</span>\n<span class=\"paragraph\">1- <code>get_high_valued_data()</code></span>\n<span class=\"paragraph\">2- <code>clean_high_valued_data()</code></span>\n<span class=\"paragraph\">3- <code>save_cleaned_data()</code></span>\n<span class=\"paragraph\">This approach would allow one to divide and overcome any task that at first might feel daunting. </span>\n<span class=\"paragraph\">On the other hand writing a function for everything might not make a lot of sense either. From our example above a function like <code>analyze_high_valued_data()</code> might not work as well as the others because our goals/parameters for the analysis might keep changing. A function for analysis would not be as scalable as the rest!</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "slnk",
+      "code_hash": "15bbd95b8be3dc2a5758d4684918fb1a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"determining-the-input-parameters-to-our-function\">Determining the input parameters to our function</h3>\n<span class=\"paragraph\">Once we define broadly what our function needs to do that can also help determine what input parameters it should take to perform the task.</span>\n<span class=\"paragraph\">I like to use the bare minimum number of parameters that will get the job done. Adding more and more parameters can make the function confusing and that can also indicate the need to break the function down further.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "HuMH",
+      "code_hash": "24b67431574b62a597358b0ceec0950f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"other-things-to-keep-in-mind\">Other things to keep in mind:</h3>\n<ul>\n<li><strong>Use descriptive function names.</strong> A function's name should say what it does, ideally starting with a verb (<code>clean_high_valued_data()</code> rather than <code>process()</code>). If you struggle to name a function, it may be doing too much.</li>\n<li><strong>Write docstrings.</strong> A short docstring right below the definition should explain what the function does, what it takes in, and what it returns. This helps others, and future you, understand the code without reading every line.</li>\n<li><strong>Focus on writing pure functions at first.</strong> Pure functions are easier to test, debug, and reuse because they don't depend on or change anything outside themselves.</li>\n<li><strong>Use default arguments (especially for optional parameters).</strong> Defaults like <code>def get_high_valued_data(file_path: \"your/file/path\"):</code> let the function handle the common case without extra arguments, while still allowing changes when needed.</li>\n<li><strong>Keep functions short!</strong> If a function no longer fits on one screen, it's probably doing more than one thing. Splitting it into smaller functions makes each piece easier to read and test.</li>\n<li>(optional) <strong>Use type hints.</strong> Type hints like <code>def clean_high_valued_data(df: pd.DataFrame) -&gt; pd.DataFrame:</code> make inputs and outputs clear at a glance. Python doesn't enforce them, but they serve as built-in documentation.</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "gkto",
+      "code_hash": "0b813a10355d1f25ca008bd48d34094b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"break-questions\">break - Questions?</h2></span>"
           }
         }
       ],
@@ -254,6 +371,45 @@
     },
     {
       "id": "Vxnm",
+      "code_hash": "dd7657ed112ba93034830c06c2269aa2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"testing-exception-handling\">Testing &amp; Exception Handling</h2>\n<span class=\"paragraph\">Functions lend themselves well into the testing paradigm because functions have clearly designed input and output space and when we write functions we have a general idea about the kind of input our code inside the function expects. This is super helpful as it allows us to add some additional lines that can catch some errors that we might expect. And outside of the function we can use something called <strong>Unit Testing</strong> to make up some cases that make sure that the code is returning the output we expect!</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "oixd",
+      "code_hash": "37e740ee494d0681cd8bd2973478ce59",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"in-code-exception-handling\">In-Code Exception Handling</h3>\n<span class=\"paragraph\">We can encounter errors when running codes even though the code we write has the correct syntax. Such errors are called <strong>Exceptions</strong> and many programming language allow us to handle these errors.</span>\n<span class=\"paragraph\">Let's look at an example where we use Try/Except:</span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"k\">def</span><span class=\"w\"> </span><span class=\"nf\">add</span><span class=\"p\">(</span><span class=\"n\">a</span><span class=\"p\">:</span><span class=\"nb\">int</span><span class=\"p\">,</span> <span class=\"n\">b</span><span class=\"p\">:</span><span class=\"nb\">int</span><span class=\"p\">)</span> <span class=\"o\">-&gt;</span> <span class=\"nb\">int</span><span class=\"p\">:</span>\n<span class=\"w\">    </span><span class=\"sd\">'''add two numbers and return their sum'''</span>\n    <span class=\"k\">return</span> <span class=\"n\">a</span> <span class=\"o\">+</span> <span class=\"n\">b</span>\n</code></pre></div>\n<span class=\"paragraph\">The function above takes two integers as inputs and returns an output and is syntactically correct but what if we provide it with an input that is a string and the other an int?</span>\n<span class=\"paragraph\">We get a <code>TypeError</code> which might throw someone new to Python and programming in general off. Adding exception handling allows us to add helpful error messages! We can add the following to the above:</span>\n<h4 id=\"tryexcept\"><code>Try/Except</code></h4>\n<span class=\"paragraph\"><code>Try/Except</code> is used to notify the user when our program catches something but it does not cause the program to stop running\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"k\">def</span><span class=\"w\"> </span><span class=\"nf\">add</span><span class=\"p\">(</span><span class=\"n\">a</span><span class=\"p\">:</span><span class=\"nb\">int</span><span class=\"p\">,</span> <span class=\"n\">b</span><span class=\"p\">:</span><span class=\"nb\">int</span><span class=\"p\">)</span> <span class=\"o\">-&gt;</span> <span class=\"nb\">int</span><span class=\"p\">:</span>\n    <span class=\"k\">try</span><span class=\"p\">:</span>\n        <span class=\"k\">return</span> <span class=\"n\">a</span> <span class=\"o\">+</span> <span class=\"n\">b</span>\n    <span class=\"k\">except</span> <span class=\"ne\">TypeError</span><span class=\"p\">:</span>\n        <span class=\"k\">return</span> <span class=\"sa\">f</span><span class=\"s2\">\"Can't add a </span><span class=\"si\">{</span><span class=\"nb\">type</span><span class=\"p\">(</span><span class=\"n\">a</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"s2\"> to </span><span class=\"si\">{</span><span class=\"nb\">type</span><span class=\"p\">(</span><span class=\"n\">b</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"s2\">\"</span>\n</code></pre></div></span>\n<span class=\"paragraph\">This comes in super handy when working with messy data, connecting to APIs etc.</span>\n<h4 id=\"raise\"><code>raise</code></h4>\n<span class=\"paragraph\">We can instead also use <code>raise</code> in case we want to halt execution</span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"k\">def</span><span class=\"w\"> </span><span class=\"nf\">add</span><span class=\"p\">(</span><span class=\"n\">a</span><span class=\"p\">:</span><span class=\"nb\">int</span><span class=\"p\">,</span> <span class=\"n\">b</span><span class=\"p\">:</span><span class=\"nb\">int</span><span class=\"p\">)</span> <span class=\"o\">-&gt;</span> <span class=\"nb\">int</span><span class=\"p\">:</span>\n    <span class=\"k\">if</span> <span class=\"nb\">type</span><span class=\"p\">(</span><span class=\"n\">a</span><span class=\"p\">)</span> <span class=\"o\">!=</span> <span class=\"nb\">type</span><span class=\"p\">(</span><span class=\"n\">b</span><span class=\"p\">):</span>\n        <span class=\"k\">raise</span> <span class=\"ne\">TypeError</span><span class=\"p\">(</span><span class=\"sa\">f</span><span class=\"s2\">\"We cannot add </span><span class=\"si\">{</span><span class=\"nb\">type</span><span class=\"p\">(</span><span class=\"n\">a</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"s2\"> to </span><span class=\"si\">{</span><span class=\"nb\">type</span><span class=\"p\">(</span><span class=\"n\">b</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"s2\">\"</span><span class=\"p\">)</span>\n    <span class=\"k\">return</span> <span class=\"n\">a</span> <span class=\"o\">+</span> <span class=\"n\">b</span>\n</code></pre></div>\n<span class=\"paragraph\"><code>raise</code> statements can be paired with <code>try</code> or used on their own.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "337eb23de71524c075614d9bf825b9cd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"modifying-connect_db\">Modifying connect_db`</h3>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"k\">try</span><span class=\"p\">:</span>\n    <span class=\"k\">if</span> <span class=\"n\">db_name</span> <span class=\"ow\">not</span> <span class=\"ow\">in</span> <span class=\"p\">[</span><span class=\"s2\">\"test\"</span><span class=\"p\">,</span> <span class=\"s2\">\"prod\"</span><span class=\"p\">,</span> <span class=\"s2\">\"staging\"</span><span class=\"p\">]:</span>\n        <span class=\"k\">raise</span> <span class=\"ne\">ValueError</span><span class=\"p\">(</span>\n            <span class=\"sa\">f</span><span class=\"s2\">\"</span><span class=\"si\">{</span><span class=\"n\">db_name</span><span class=\"si\">}</span><span class=\"s2\"> is not a valid database that our team has access to!\"</span>\n            <span class=\"s2\">\"Try one of the following: 'test', 'staging', 'prod'\"</span>\n        <span class=\"p\">)</span>\n</code></pre></div>\n<span class=\"paragraph\">It makes sense when connecting to a database to halt execution if the input is not correct!</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ulZA",
       "code_hash": "c86c9ae812dcdfaacd54da3d1bdcc579",
       "outputs": [
         {
@@ -266,7 +422,7 @@
       "console": []
     },
     {
-      "id": "DnEU",
+      "id": "ecfG",
       "code_hash": "4d1c2497793a4af12daecec11c96d796",
       "outputs": [
         {
@@ -279,26 +435,85 @@
       "console": []
     },
     {
-      "id": "ulZA",
-      "code_hash": "0bfa91e9952ad4ffb56116937dba6799",
+      "id": "Pvdt",
+      "code_hash": "f0624958d1103947d47f9d1b08739fcf",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"unit-testing\">Unit Testing</h3>\n<ul>\n<li>Go over simple unit testing here using pytest - keep it super simple - within 5 minutes</li>\n</ul></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"software-testing-unit-testing\">Software Testing - Unit Testing</h3>\n<span class=\"paragraph\">Software testing is used to answer one main question: <em>Does the code that we have written do what it is supposed to?</em></span>\n<span class=\"paragraph\">We will be focusing on Unit Testing and discuss how having a few tests can go a long way in building trust in the code that we write.</span>\n<span class=\"paragraph\">Unit tests are easy to implement and understand and that makes them super accessible early on in our programming journey! Writing test early on also helps make sure that our programs keep working as things are added to them over time.</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "ecfG",
-      "code_hash": "0318a52d9d3b68037bee5769a95f4e60",
+      "id": "foVo",
+      "code_hash": "b55b03985aa9456cd7f507555fd5e05f",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"summarizing-final-thoughts\">Summarizing &amp; Final Thoughts</h2></span>"
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "zubW",
+      "code_hash": "829b007b502743c71206d3e2259294fa",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "daKZ",
+      "code_hash": "d7deebb40d7701c6ae4ee2b0757e1a0d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[33m                                                                      [100%]\u001b[0m\n=================================== Overview ===================================\nPassed Tests:\n\u001b[1m\u001b[32m\u001b[22m\u2713\u001b[0m\u001b[0m functions_testing_python.py::TestBlock::test_negatives\n\u001b[1m\u001b[32m\u001b[22m\u2713\u001b[0m\u001b[0m functions_testing_python.py::TestBlock::test_one_zero\n\u001b[1m\u001b[32m\u001b[22m\u2713\u001b[0m\u001b[0m functions_testing_python.py::TestBlock::test_both_zero\n\nSummary:\nTotal: 3, Passed: 3, Failed: 0, Errors: 0, Skipped: 0\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "ZBYS",
+      "code_hash": "dc5e0d4801aed849c9d90f3d2cc6fffc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"summary-final-thoughts\">Summary &amp; Final Thoughts</h2>\n<ul>\n<li>Functions should do one thing and do it well</li>\n<li>Avoid copy/pasting code with minimal changes and consider writing a function instead</li>\n<li>Wrting good functions with a well-defined purpose and input sapce makes testing super convenient!</li>\n<li>Using functions, writing tests and having in-code exception handling makes the overall quality of our code much better and it also makes things easy to maintain in the long run</li>\n<li>Using these tools can also help someone new to your org understand what different components are doing and how everything works togther!</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "kEyr",
+      "code_hash": "30027d4a0774a9d44cab319e8c8cf1c6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><hr />\n<h2 id=\"thank-you\">Thank you!</h2>\n<h2 id=\"questions\">Questions?</h2>\n<span class=\"paragraph\">In case of other questions please feel free to email me at: <a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#109;&#114;&#97;&#110;&#102;&#97;&#105;&#122;&#64;&#117;&#99;&#104;&#105;&#99;&#97;&#103;&#111;&#46;&#101;&#100;&#117;\">&#105;&#109;&#114;&#97;&#110;&#102;&#97;&#105;&#122;&#64;&#117;&#99;&#104;&#105;&#99;&#97;&#103;&#111;&#46;&#101;&#100;&#117;</a> </span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"k\">def</span><span class=\"w\"> </span><span class=\"nf\">goodluck</span><span class=\"p\">():</span>\n    <span class=\"k\">return</span> <span class=\"s2\">\"happy coding\"</span>\n</code></pre></div>\n<hr /></span>"
           }
         }
       ],

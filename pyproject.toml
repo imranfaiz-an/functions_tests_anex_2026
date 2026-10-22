@@ -11,6 +11,7 @@ dependencies = [
     "numpy>=2.5.4",
     "pandas>=3.0.6",
     "polars>=2.0.0",
+    "pytest>=9.1.1",
     "rpy2>=3.6.9",
 ]
 
