@@ -274,7 +274,7 @@ def _(mo):
         df = pd.DataFrame({"dept":["dof", "dot", "dcp"], "city": ["nyc", "nyc", "nyc"]})
 
         df.isna() # Detect missing values for an array-like object.
-        df.head() # Return reshaped DataFrame organized by given index / column values.
+        df.head()
         ```
         and many many more. These functions do task that most of us working with data need to do. Simply importing a library that has functions that perform tasks we need to do make our life much easier!
         """
@@ -400,7 +400,7 @@ def _(mo):
 
     ```python
     test_connection = connect_db("test")
-    prod_connection = connect_db("test")
+    prod_connection = connect_db("production")
     ```
     """)
     return
@@ -449,7 +449,7 @@ def _(mo):
     - **Use descriptive function names.** A function's name should say what it does, ideally starting with a verb (`clean_high_valued_data()` rather than `process()`). If you struggle to name a function, it may be doing too much.
     - **Write docstrings.** A short docstring right below the definition should explain what the function does, what it takes in, and what it returns. This helps others, and future you, understand the code without reading every line.
     - **Focus on writing pure functions at first.** Pure functions are easier to test, debug, and reuse because they don't depend on or change anything outside themselves.
-    - **Use default arguments (especially for optional parameters).** Defaults like `def get_high_valued_data(file_path: "your/file/path"):` let the function handle the common case without extra arguments, while still allowing changes when needed.
+    - **Use default arguments (especially for optional parameters).** Defaults like `def get_high_valued_data(file_path="your/file/path"):` let the function handle the common case without extra arguments, while still allowing changes when needed.
     - **Keep functions short!** If a function no longer fits on one screen, it's probably doing more than one thing. Splitting it into smaller functions makes each piece easier to read and test.
     - (optional) **Use type hints.** Type hints like ```def clean_high_valued_data(df: pd.DataFrame) -> pd.DataFrame:``` make inputs and outputs clear at a glance. Python doesn't enforce them, but they serve as built-in documentation.
     """)
@@ -635,7 +635,7 @@ def _(add):
     class TestBlock:
         @staticmethod
         def test_negatives():
-            assert add(-2, -3) == -5, "This test fails"
+            assert add(-2, -3) == -5, "This test passes"
 
         @staticmethod
         def test_one_zero():

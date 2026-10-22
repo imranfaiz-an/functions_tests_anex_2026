@@ -19,7 +19,7 @@
       "console": []
     },
     {
-      "id": "vblA",
+      "id": "MJUe",
       "code_hash": "751abc2c9c20d12992191267b40cbd6b",
       "outputs": [
         {
@@ -32,13 +32,26 @@
       "console": []
     },
     {
-      "id": "bkHC",
-      "code_hash": "9b1ed9f059f402164189b1169cff08ea",
+      "id": "vblA",
+      "code_hash": "354a82dddd46264b5aa1a19d9a22f520",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"agenda\">Agenda:</h2>\n<ul>\n<li>What are functions?<ul>\n<li>Types of functions</li>\n</ul>\n</li>\n<li>Why write functions at all?</li>\n<li>When to write functions?</li>\n<li>Database Connection - Case Study</li>\n<li>Good practices for writing functions</li>\n<li>How functions facilitate testing</li>\n<li>Try/Except in Python </li>\n<li>Unit Testing</li>\n</ul></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"agenda\">Agenda:</h2>\n<ul>\n<li>What are functions?<ul>\n<li>Types of functions</li>\n</ul>\n</li>\n<li>Why write functions at all?</li>\n<li>When to write functions?</li>\n<li>Database Connection - Case Study</li>\n<li>Good practices for writing functions</li>\n<li>How functions facilitate testing</li>\n<li>Try/Except in Python</li>\n<li>Unit Testing</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "070ab66a48e7675ec9e90f9befb31392",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-callout-output data-html='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003e&#92;&quot;A function is a callable unit of some software logic that has a pre-defined behavior and can be invoked any number of times&#92;&quot;&#92;u003csup id=&#92;&quot;fnref:31-1&#92;&quot;&#92;u003e&#92;u003ca class=&#92;&quot;footnote-ref&#92;&quot; href=&#92;&quot;#fn:31-1&#92;&quot;&#92;u003e1&#92;u003c/a&#92;u003e&#92;u003c/sup&#92;u003e.&#92;u003c/span&#92;u003e&#92;n&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eIt helps to think of functions as a machine that receives as input and processes that input in some predetermined way and returns some/expected output.&#92;u003c/span&#92;u003e&#92;n&#92;u003cdiv class=&#92;&quot;footnote&#92;&quot;&#92;u003e&#92;n&#92;u003chr /&#92;u003e&#92;n&#92;u003col&#92;u003e&#92;n&#92;u003cli id=&#92;&quot;fn:31-1&#92;&quot;&#92;u003e&#92;u003ca href=&#92;&quot;https://en.wikipedia.org/wiki/Function_(computer_programming)&#92;&quot; rel=&#92;&quot;noopener noreferrer&#92;&quot; target=&#92;&quot;_blank&#92;&quot;&#92;u003eFunctions - Wiki&#92;u003c/a&#92;u003e&amp;#160;&#92;u003ca class=&#92;&quot;footnote-backref&#92;&quot; href=&#92;&quot;#fnref:31-1&#92;&quot; title=&#92;&quot;Jump back to footnote 1 in the text&#92;&quot;&#92;u003e&amp;#8617;&#92;u003c/a&#92;u003e&#92;u003c/li&#92;u003e&#92;n&#92;u003c/ol&#92;u003e&#92;n&#92;u003c/div&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-kind='&quot;info&quot;' data-title='&quot;What is a function?&quot;'></marimo-callout-output>"
           }
         }
       ],
@@ -46,19 +59,6 @@
     },
     {
       "id": "lEQa",
-      "code_hash": "070ab66a48e7675ec9e90f9befb31392",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<marimo-callout-output data-html='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003e&#92;&quot;A function is a callable unit of some software logic that has a pre-defined behavior and can be invoked any number of times&#92;&quot;&#92;u003csup id=&#92;&quot;fnref:11178-1&#92;&quot;&#92;u003e&#92;u003ca class=&#92;&quot;footnote-ref&#92;&quot; href=&#92;&quot;#fn:11178-1&#92;&quot;&#92;u003e1&#92;u003c/a&#92;u003e&#92;u003c/sup&#92;u003e.&#92;u003c/span&#92;u003e&#92;n&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eIt helps to think of functions as a machine that receives as input and processes that input in some predetermined way and returns some/expected output.&#92;u003c/span&#92;u003e&#92;n&#92;u003cdiv class=&#92;&quot;footnote&#92;&quot;&#92;u003e&#92;n&#92;u003chr /&#92;u003e&#92;n&#92;u003col&#92;u003e&#92;n&#92;u003cli id=&#92;&quot;fn:11178-1&#92;&quot;&#92;u003e&#92;u003ca href=&#92;&quot;https://en.wikipedia.org/wiki/Function_(computer_programming)&#92;&quot; rel=&#92;&quot;noopener noreferrer&#92;&quot; target=&#92;&quot;_blank&#92;&quot;&#92;u003eFunctions - Wiki&#92;u003c/a&#92;u003e&amp;#160;&#92;u003ca class=&#92;&quot;footnote-backref&#92;&quot; href=&#92;&quot;#fnref:11178-1&#92;&quot; title=&#92;&quot;Jump back to footnote 1 in the text&#92;&quot;&#92;u003e&amp;#8617;&#92;u003c/a&#92;u003e&#92;u003c/li&#92;u003e&#92;n&#92;u003c/ol&#92;u003e&#92;n&#92;u003c/div&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-kind='&quot;info&quot;' data-title='&quot;What is a function?&quot;'></marimo-callout-output>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "Xref",
       "code_hash": "d5ce52688ad24fe409d793b878501f5a",
       "outputs": [
         {
@@ -71,7 +71,7 @@
       "console": []
     },
     {
-      "id": "SFPL",
+      "id": "PKri",
       "code_hash": "9596e9e48ad4db5013da4512a220b3ac",
       "outputs": [
         {
@@ -84,7 +84,7 @@
       "console": []
     },
     {
-      "id": "BYtC",
+      "id": "Xref",
       "code_hash": "3dc5eab4ad04a865c1e5891f16365fc8",
       "outputs": [
         {
@@ -97,20 +97,20 @@
       "console": []
     },
     {
-      "id": "RGSE",
+      "id": "SFPL",
       "code_hash": "539d7f52e86d0b32ebe86bec3dc56027",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='SFPL-0' random-id='9bab4924-e15b-c651-9608-d53237e7587f'><marimo-slider data-initial-value='0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003ch2 id=&#92;&quot;astonishment-level&#92;&quot;&#92;u003eAstonishment Level:&#92;u003c/h2&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0' data-stop='25' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='PKri-0' random-id='0e9a69ad-8b60-baa7-1162-894f1c303b47'><marimo-slider data-initial-value='0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003ch2 id=&#92;&quot;astonishment-level&#92;&quot;&#92;u003eAstonishment Level:&#92;u003c/h2&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0' data-stop='25' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "emfo",
+      "id": "BYtC",
       "code_hash": "9df10400c0a3fc9094e1424ae2af7923",
       "outputs": [
         {
@@ -123,7 +123,7 @@
       "console": []
     },
     {
-      "id": "Kclp",
+      "id": "RGSE",
       "code_hash": "6e459e1957ebebb4e25ebf7f1ad0b140",
       "outputs": [
         {
@@ -136,78 +136,26 @@
       "console": []
     },
     {
-      "id": "oyJT",
-      "code_hash": "4485fe09ccbf0c90f4cc3fb9d249a934",
+      "id": "Kclp",
+      "code_hash": "af2beb41e2bac4f85764c15dc6a8ab7c",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"types-of-functions\">Types of Functions:</h2>\n<h3 id=\"pure-functions\">Pure Functions:</h3>\n<span class=\"paragraph\">Functions that for a given input return the same output everytime and have no side effects<sup id=\"fnref:11213-1\"><a class=\"footnote-ref\" href=\"#fn:11213-1\">1</a></sup>. </span>\n<span class=\"paragraph\">Following is an example of a pure function: </span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"k\">def</span><span class=\"w\"> </span><span class=\"nf\">add_list</span><span class=\"p\">(</span><span class=\"n\">numbers</span><span class=\"p\">:</span> <span class=\"p\">[</span><span class=\"nb\">int</span><span class=\"p\">])</span> <span class=\"o\">-&gt;</span> <span class=\"nb\">int</span><span class=\"p\">:</span>\n<span class=\"w\">    </span><span class=\"sd\">'''Take a list of integers and return their sum'''</span>\n    <span class=\"n\">total</span> <span class=\"o\">=</span> <span class=\"mi\">0</span> <span class=\"c1\"># total here is a Local Variable</span>\n    <span class=\"k\">for</span> <span class=\"n\">i</span> <span class=\"ow\">in</span> <span class=\"n\">numbers</span><span class=\"p\">:</span>\n        <span class=\"n\">total</span> <span class=\"o\">+=</span> <span class=\"n\">i</span>\n    <span class=\"k\">return</span> <span class=\"n\">total</span> <span class=\"c1\"># ouput with same input will never change</span>\n</code></pre></div>\n<h3 id=\"impure-functions\">Impure Functions:</h3>\n<span class=\"paragraph\">Functions that alter something outside of their scope or that have any side effects.</span>\n<span class=\"paragraph\">An example of impure function: </span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"n\">count</span> <span class=\"o\">=</span> <span class=\"mi\">0</span> <span class=\"c1\"># count is a global variable</span>\n\n<span class=\"k\">def</span><span class=\"w\"> </span><span class=\"nf\">increase_count</span><span class=\"p\">():</span>\n    <span class=\"k\">global</span> <span class=\"n\">count</span>\n    <span class=\"n\">count</span> <span class=\"o\">+=</span> <span class=\"mi\">1</span>\n    <span class=\"k\">return</span> <span class=\"n\">count</span> <span class=\"c1\"># will return a different value each time called</span>\n</code></pre></div>\n<div class=\"footnote\">\n<hr />\n<ol>\n<li id=\"fn:11213-1\">A side effect is anything that has an observable effect other than its primary effect of reading the value of its arguments and returning a value. Side effects include: modification of non-local variables, doing I/O operations etc.&#160;<a class=\"footnote-backref\" href=\"#fnref:11213-1\" title=\"Jump back to footnote 1 in the text\">&#8617;</a></li>\n</ol>\n</div></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"types-of-functions\">Types of Functions:</h2>\n<h3 id=\"pure-functions\">Pure Functions:</h3>\n<span class=\"paragraph\">Functions that for a given input return the same output everytime and have no side effects<sup id=\"fnref:37-1\"><a class=\"footnote-ref\" href=\"#fn:37-1\">1</a></sup>.</span>\n<span class=\"paragraph\">Following is an example of a pure function:</span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"k\">def</span><span class=\"w\"> </span><span class=\"nf\">add_list</span><span class=\"p\">(</span><span class=\"n\">numbers</span><span class=\"p\">:</span> <span class=\"p\">[</span><span class=\"nb\">int</span><span class=\"p\">])</span> <span class=\"o\">-&gt;</span> <span class=\"nb\">int</span><span class=\"p\">:</span>\n<span class=\"w\">    </span><span class=\"sd\">'''Take a list of integers and return their sum'''</span>\n    <span class=\"n\">total</span> <span class=\"o\">=</span> <span class=\"mi\">0</span> <span class=\"c1\"># total here is a Local Variable</span>\n    <span class=\"k\">for</span> <span class=\"n\">i</span> <span class=\"ow\">in</span> <span class=\"n\">numbers</span><span class=\"p\">:</span>\n        <span class=\"n\">total</span> <span class=\"o\">+=</span> <span class=\"n\">i</span>\n    <span class=\"k\">return</span> <span class=\"n\">total</span> <span class=\"c1\"># ouput with same input will never change</span>\n</code></pre></div>\n<h3 id=\"impure-functions\">Impure Functions:</h3>\n<span class=\"paragraph\">Functions that alter something outside of their scope or that have any side effects.</span>\n<span class=\"paragraph\">An example of impure function:</span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"n\">count</span> <span class=\"o\">=</span> <span class=\"mi\">0</span> <span class=\"c1\"># count is a global variable</span>\n\n<span class=\"k\">def</span><span class=\"w\"> </span><span class=\"nf\">increase_count</span><span class=\"p\">():</span>\n    <span class=\"k\">global</span> <span class=\"n\">count</span>\n    <span class=\"n\">count</span> <span class=\"o\">+=</span> <span class=\"mi\">1</span>\n    <span class=\"k\">return</span> <span class=\"n\">count</span> <span class=\"c1\"># will return a different value each time called</span>\n</code></pre></div>\n<div class=\"footnote\">\n<hr />\n<ol>\n<li id=\"fn:37-1\">A side effect is anything that has an observable effect other than its primary effect of reading the value of its arguments and returning a value. Side effects include: modification of non-local variables, doing I/O operations etc.&#160;<a class=\"footnote-backref\" href=\"#fnref:37-1\" title=\"Jump back to footnote 1 in the text\">&#8617;</a></li>\n</ol>\n</div></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "nTiw",
+      "id": "emfo",
       "code_hash": "2c088a6ea7f618a8f9638a5622fed841",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='nTiw-0' random-id='aac9caf5-8b76-e26c-8dbb-459b26cada9a'><marimo-text data-initial-value='&quot;1, 2, 3&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eNumbers (comma-separated):&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-kind='&quot;text&quot;' data-full-width='false' data-disabled='false' data-debounce='true'></marimo-text></marimo-ui-element><marimo-ui-element object-id='nTiw-1' random-id='ac60ee86-bb70-f73c-42ac-6824e32a9d01'><marimo-button data-initial-value='0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eCall add_list() again&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element></div>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "pbyN",
-      "code_hash": "4af81ff5aeaa65eeb4b44d9721c67293",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><code>add_list([1, 2, 3])</code> \u2192 <strong>6</strong></span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "iJtu",
-      "code_hash": "3609080ca33d6c7cedd4624c5de48e4e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<marimo-ui-element object-id='iJtu-0' random-id='24be28d2-972d-db93-5b97-98f8a479e163'><marimo-button data-initial-value='0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eCall increase_count()&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "iupR",
-      "code_hash": "edb17c0be1efc207315338995fdf5bd3",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><code>increase_count()</code> \u2192 <strong>5</strong></span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "PKri",
-      "code_hash": "4cdf20aba83894a8b0871a293bc318bb",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"why-functions\">Why Functions?</h2>\n<span class=\"paragraph\">Functions are a great way to streamline work as Data Scientists/Analysts/Engineers - writing functions allows us to name processes, avoid redundancies and work on our organizational/team specific code base incrementally.</span>\n<span class=\"paragraph\">Some immediately useful features of writing code in functions are<sup id=\"fnref:11162-1\"><a class=\"footnote-ref\" href=\"#fn:11162-1\">1</a></sup><sup id=\"fnref:11162-2\"><a class=\"footnote-ref\" href=\"#fn:11162-2\">2</a></sup>:</span>\n<ul>\n<li><strong>Modularity</strong>: Functions help remove redundancies in code and allow reuse of code</li>\n<li><strong>Decomposition</strong>: We can break a complex task into more managable steps - where each function builds on the prior. This also allows different team members to work on a different part of the same problem in parallel</li>\n<li><strong>Memory</strong>: Descriptive function names are easy to remember and communicate. And the variable/objects defined inside of functions are not stored in memory aftear the function runs - saving computer memory as well!</li>\n<li><strong>Maintainability</strong>: Functions are easy to update; to make changes we would need to only update the code in one place. This makes our codebase much more easier to maintain and expand in the long run</li>\n<li><strong>Tests &amp; Checks</strong>: We can explicitly handle issues and edge cases when writing functions and they also make it much easier to write tests</li>\n</ul>\n<div class=\"footnote\">\n<hr />\n<ol>\n<li id=\"fn:11162-1\"><a href=\"https://r4ds.hadley.nz/functions.html\" rel=\"noopener noreferrer\" target=\"_blank\">Hadley Wickham - R for Data Science</a>&#160;<a class=\"footnote-backref\" href=\"#fnref:11162-1\" title=\"Jump back to footnote 1 in the text\">&#8617;</a></li>\n<li id=\"fn:11162-2\"><a href=\"https://www.pyopensci.org/lessons/write-better-code/optimize-code/about-python-functions.html\" rel=\"noopener noreferrer\" target=\"_blank\">Why Write Functions?</a>&#160;<a class=\"footnote-backref\" href=\"#fnref:11162-2\" title=\"Jump back to footnote 2 in the text\">&#8617;</a></li>\n</ol>\n</div></span>"
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='emfo-0' random-id='27355a19-6c38-fdfe-1e0f-340eab1c751e'><marimo-text data-initial-value='&quot;1, 2, 3&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eNumbers (comma-separated):&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-kind='&quot;text&quot;' data-full-width='false' data-disabled='false' data-debounce='true'></marimo-text></marimo-ui-element><marimo-ui-element object-id='emfo-1' random-id='99a19fd6-3189-d8d4-df10-f934340af74b'><marimo-button data-initial-value='0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eCall add_list() again&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element></div>"
           }
         }
       ],
@@ -215,19 +163,71 @@
     },
     {
       "id": "Hstk",
-      "code_hash": "cd72020fdbd0118b97cbdfa352539c85",
+      "code_hash": "4af81ff5aeaa65eeb4b44d9721c67293",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"most-of-us-already-use-functions-all-the-time\">Most of us already use functions all the time!</h3>\n<span class=\"paragraph\">Both Python &amp; R have tons of <strong>built-in functions</strong> that we use all the time.\nOn top of that, both languages give us access to <strong>libraries/packages</strong>, where\nsomeone else already wrote a bunch of functions and published them for us to use!</span>\n<span class=\"paragraph\">Here are some common built-in functions in Python:</span></span><marimo-ui-element object-id='Hstk-0' random-id='94279f4e-ddf0-d075-fd72-4ea29f66e301'><marimo-tabs data-initial-value='&quot;&quot;' data-label='null' data-tabs='[&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eprint()&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;,&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003esum()&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;,&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003elist()&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;]' data-orientation='&quot;horizontal&quot;'><div data-kind='tab'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><div class=\"language-python codehilite\"><pre><span></span><code><span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s2\">\"Hello!\"</span><span class=\"p\">)</span>\n</code></pre></div>\n<code>print()</code> shows text on the screen.</span>\n<span class=\"paragraph\">Fun fact: The <em>print()</em> function doesn't actually <em>return</em> anything, so if we store it's output in an object it will just be <code>None</code>.\nPrint is also a very commonly used <em>impure</em> function!</span></span></div><div data-kind='tab'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><div class=\"language-python codehilite\"><pre><span></span><code><span class=\"nb\">sum</span><span class=\"p\">([</span><span class=\"mi\">3</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">,</span> <span class=\"mi\">4</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">,</span> <span class=\"mi\">5</span><span class=\"p\">])</span>\n</code></pre></div>\n<code>sum()</code> add things up.</span>\n<span class=\"paragraph\"><strong>Returns:</strong> <code>14</code></span></span></div><div data-kind='tab'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><div class=\"language-python codehilite\"><pre><span></span><code><span class=\"nb\">list</span><span class=\"p\">(</span><span class=\"s2\">\"hello\"</span><span class=\"p\">)</span>\n</code></pre></div>\n<code>list()</code> turns things into a list. A word becomes a list of its letters!</span>\n<span class=\"paragraph\"><strong>Returns:</strong> <code>['h', 'e', 'l', 'l', 'o']</code></span></span></div></marimo-tabs></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><hr />\n<span class=\"paragraph\">When we install a library like Pandas and import it in our code it comes with a lot of functions that it's creators built for our use, for example:\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"kn\">import</span><span class=\"w\"> </span><span class=\"nn\">pandas</span><span class=\"w\"> </span><span class=\"k\">as</span><span class=\"w\"> </span><span class=\"nn\">pd</span>\n\n<span class=\"n\">df</span> <span class=\"o\">=</span> <span class=\"n\">pd</span><span class=\"o\">.</span><span class=\"n\">DataFrame</span><span class=\"p\">({</span><span class=\"s2\">\"dept\"</span><span class=\"p\">:[</span><span class=\"s2\">\"dof\"</span><span class=\"p\">,</span> <span class=\"s2\">\"dot\"</span><span class=\"p\">,</span> <span class=\"s2\">\"dcp\"</span><span class=\"p\">],</span> <span class=\"s2\">\"city\"</span><span class=\"p\">:</span> <span class=\"p\">[</span><span class=\"s2\">\"nyc\"</span><span class=\"p\">,</span> <span class=\"s2\">\"nyc\"</span><span class=\"p\">,</span> <span class=\"s2\">\"nyc\"</span><span class=\"p\">]})</span>\n\n<span class=\"n\">df</span><span class=\"o\">.</span><span class=\"n\">isna</span><span class=\"p\">()</span> <span class=\"c1\"># Detect missing values for an array-like object.</span>\n<span class=\"n\">df</span><span class=\"o\">.</span><span class=\"n\">head</span><span class=\"p\">()</span> <span class=\"c1\"># Return reshaped DataFrame organized by given index / column values.</span>\n</code></pre></div>\nand many many more. These functions do task that most of us working with data need to do. Simply importing a library that has functions that perform tasks we need to do make our life much easier!</span></span></div>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><code>add_list([1, 2, 4])</code> \u2192 <strong>7</strong></span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "LTgO",
+      "id": "nWHF",
+      "code_hash": "3609080ca33d6c7cedd4624c5de48e4e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='nWHF-0' random-id='b81a0d2f-da4d-8aeb-f9ca-de786dbccf3c'><marimo-button data-initial-value='0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eCall increase_count()&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "edb17c0be1efc207315338995fdf5bd3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><code>increase_count()</code> \u2192 <strong>18</strong></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "4cdf20aba83894a8b0871a293bc318bb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"why-functions\">Why Functions?</h2>\n<span class=\"paragraph\">Functions are a great way to streamline work as Data Scientists/Analysts/Engineers - writing functions allows us to name processes, avoid redundancies and work on our organizational/team specific code base incrementally.</span>\n<span class=\"paragraph\">Some immediately useful features of writing code in functions are<sup id=\"fnref:43-1\"><a class=\"footnote-ref\" href=\"#fn:43-1\">1</a></sup><sup id=\"fnref:43-2\"><a class=\"footnote-ref\" href=\"#fn:43-2\">2</a></sup>:</span>\n<ul>\n<li><strong>Modularity</strong>: Functions help remove redundancies in code and allow reuse of code</li>\n<li><strong>Decomposition</strong>: We can break a complex task into more managable steps - where each function builds on the prior. This also allows different team members to work on a different part of the same problem in parallel</li>\n<li><strong>Memory</strong>: Descriptive function names are easy to remember and communicate. And the variable/objects defined inside of functions are not stored in memory aftear the function runs - saving computer memory as well!</li>\n<li><strong>Maintainability</strong>: Functions are easy to update; to make changes we would need to only update the code in one place. This makes our codebase much more easier to maintain and expand in the long run</li>\n<li><strong>Tests &amp; Checks</strong>: We can explicitly handle issues and edge cases when writing functions and they also make it much easier to write tests</li>\n</ul>\n<div class=\"footnote\">\n<hr />\n<ol>\n<li id=\"fn:43-1\"><a href=\"https://r4ds.hadley.nz/functions.html\" rel=\"noopener noreferrer\" target=\"_blank\">Hadley Wickham - R for Data Science</a>&#160;<a class=\"footnote-backref\" href=\"#fnref:43-1\" title=\"Jump back to footnote 1 in the text\">&#8617;</a></li>\n<li id=\"fn:43-2\"><a href=\"https://www.pyopensci.org/lessons/write-better-code/optimize-code/about-python-functions.html\" rel=\"noopener noreferrer\" target=\"_blank\">Why Write Functions?</a>&#160;<a class=\"footnote-backref\" href=\"#fnref:43-2\" title=\"Jump back to footnote 2 in the text\">&#8617;</a></li>\n</ol>\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "cd72020fdbd0118b97cbdfa352539c85",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"most-of-us-already-use-functions-all-the-time\">Most of us already use functions all the time!</h3>\n<span class=\"paragraph\">Both Python &amp; R have tons of <strong>built-in functions</strong> that we use all the time.\nOn top of that, both languages give us access to <strong>libraries/packages</strong>, where\nsomeone else already wrote a bunch of functions and published them for us to use!</span>\n<span class=\"paragraph\">Here are some common built-in functions in Python:</span></span><marimo-ui-element object-id='ROlb-0' random-id='5b776e09-01ee-cd95-bccd-d151bcb2dd49'><marimo-tabs data-initial-value='&quot;&quot;' data-label='null' data-tabs='[&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eprint()&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;,&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003esum()&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;,&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003elist()&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;]' data-orientation='&quot;horizontal&quot;'><div data-kind='tab'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><div class=\"language-python codehilite\"><pre><span></span><code><span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s2\">\"Hello!\"</span><span class=\"p\">)</span>\n</code></pre></div>\n<code>print()</code> shows text on the screen.</span>\n<span class=\"paragraph\">Fun fact: The <em>print()</em> function doesn't actually <em>return</em> anything, so if we store it's output in an object it will just be <code>None</code>.\nPrint is also a very commonly used <em>impure</em> function!</span></span></div><div data-kind='tab'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><div class=\"language-python codehilite\"><pre><span></span><code><span class=\"nb\">sum</span><span class=\"p\">([</span><span class=\"mi\">3</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">,</span> <span class=\"mi\">4</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">,</span> <span class=\"mi\">5</span><span class=\"p\">])</span>\n</code></pre></div>\n<code>sum()</code> add things up.</span>\n<span class=\"paragraph\"><strong>Returns:</strong> <code>14</code></span></span></div><div data-kind='tab'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><div class=\"language-python codehilite\"><pre><span></span><code><span class=\"nb\">list</span><span class=\"p\">(</span><span class=\"s2\">\"hello\"</span><span class=\"p\">)</span>\n</code></pre></div>\n<code>list()</code> turns things into a list. A word becomes a list of its letters!</span>\n<span class=\"paragraph\"><strong>Returns:</strong> <code>['h', 'e', 'l', 'l', 'o']</code></span></span></div></marimo-tabs></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><hr />\n<span class=\"paragraph\">When we install a library like Pandas and import it in our code it comes with a lot of functions that it's creators built for our use, for example:\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"kn\">import</span><span class=\"w\"> </span><span class=\"nn\">pandas</span><span class=\"w\"> </span><span class=\"k\">as</span><span class=\"w\"> </span><span class=\"nn\">pd</span>\n\n<span class=\"n\">df</span> <span class=\"o\">=</span> <span class=\"n\">pd</span><span class=\"o\">.</span><span class=\"n\">DataFrame</span><span class=\"p\">({</span><span class=\"s2\">\"dept\"</span><span class=\"p\">:[</span><span class=\"s2\">\"dof\"</span><span class=\"p\">,</span> <span class=\"s2\">\"dot\"</span><span class=\"p\">,</span> <span class=\"s2\">\"dcp\"</span><span class=\"p\">],</span> <span class=\"s2\">\"city\"</span><span class=\"p\">:</span> <span class=\"p\">[</span><span class=\"s2\">\"nyc\"</span><span class=\"p\">,</span> <span class=\"s2\">\"nyc\"</span><span class=\"p\">,</span> <span class=\"s2\">\"nyc\"</span><span class=\"p\">]})</span>\n\n<span class=\"n\">df</span><span class=\"o\">.</span><span class=\"n\">isna</span><span class=\"p\">()</span> <span class=\"c1\"># Detect missing values for an array-like object.</span>\n<span class=\"n\">df</span><span class=\"o\">.</span><span class=\"n\">head</span><span class=\"p\">()</span> <span class=\"c1\"># Return reshaped DataFrame organized by given index / column values.</span>\n</code></pre></div>\nand many many more. These functions do task that most of us working with data need to do. Simply importing a library that has functions that perform tasks we need to do make our life much easier!</span></span></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnkX",
       "code_hash": "f63f201ebea9b69050ba0cac584cb3f5",
       "outputs": [
         {
@@ -240,7 +240,7 @@
       "console": []
     },
     {
-      "id": "bRCA",
+      "id": "TqIu",
       "code_hash": "9ea348624412eee4043ee0759601aaf5",
       "outputs": [
         {
@@ -253,7 +253,7 @@
       "console": []
     },
     {
-      "id": "nWHF",
+      "id": "Vxnm",
       "code_hash": "c06f26af9f927c2e5fe57b0b46974c6a",
       "outputs": [
         {
@@ -266,7 +266,7 @@
       "console": []
     },
     {
-      "id": "ROlb",
+      "id": "DnEU",
       "code_hash": "31312004ca8c4aa1df5da550d8ad7e34",
       "outputs": [
         {
@@ -279,7 +279,7 @@
       "console": []
     },
     {
-      "id": "iLit",
+      "id": "ulZA",
       "code_hash": "217b140b2c72c340c2a04c28b955fbff",
       "outputs": [
         {
@@ -292,8 +292,8 @@
       "console": []
     },
     {
-      "id": "ZHCJ",
-      "code_hash": "8d08cd24cceda659152fa1412bf73b24",
+      "id": "ecfG",
+      "code_hash": "d0e54c1c48cf36279009700dc62fea01",
       "outputs": [
         {
           "type": "data",
@@ -305,33 +305,33 @@
       "console": []
     },
     {
-      "id": "qnkX",
-      "code_hash": "7ce6ac30b1b428d6e753f1cac18a2513",
+      "id": "Pvdt",
+      "code_hash": "fe46723e7f3de195a78e3c7996901728",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">By adding this function one could get the connection the the databases by just calling:</span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"n\">test_connection</span> <span class=\"o\">=</span> <span class=\"n\">connect_db</span><span class=\"p\">(</span><span class=\"s2\">\"test\"</span><span class=\"p\">)</span>\n<span class=\"n\">prod_connection</span> <span class=\"o\">=</span> <span class=\"n\">connect_db</span><span class=\"p\">(</span><span class=\"s2\">\"test\"</span><span class=\"p\">)</span>\n</code></pre></div></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">By adding this function one could get the connection the the databases by just calling:</span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"n\">test_connection</span> <span class=\"o\">=</span> <span class=\"n\">connect_db</span><span class=\"p\">(</span><span class=\"s2\">\"test\"</span><span class=\"p\">)</span>\n<span class=\"n\">prod_connection</span> <span class=\"o\">=</span> <span class=\"n\">connect_db</span><span class=\"p\">(</span><span class=\"s2\">\"production\"</span><span class=\"p\">)</span>\n</code></pre></div></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "recB",
-      "code_hash": "265b130f5f09f6a80fbb8089e26d752e",
+      "id": "ZBYS",
+      "code_hash": "c3816deeab02f310db72bd254acbde69",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"practices-to-keep-in-mind-when-writing-functions\">Practices to Keep in Mind When Writing Functions</h2>\n<h3 id=\"define-the-purpose-of-the-function-clearly\">Define the purpose of the function clearly</h3>\n<span class=\"paragraph\"><strong>Functions should ideally do one thing and do it well!</strong> It does not really help to have a function that is doing many different things - at that point there really isn't an advantage of using functions over imperative programming.</span>\n<span class=\"paragraph\">For instance say we want to work on getting some analysis done for a new tax system being proposed on high value properties. One way to do this would be to just start writing code line by line and hope it works. What the functional approach would argue for is a clear breakdown of tasks. </span>\n<span class=\"paragraph\">For instance we could break this problem down by writing the following functions:</span>\n<span class=\"paragraph\">1- <code>get_high_valued_data()</code></span>\n<span class=\"paragraph\">2- <code>clean_high_valued_data()</code></span>\n<span class=\"paragraph\">3- <code>save_cleaned_data()</code></span>\n<span class=\"paragraph\">This approach would allow one to divide and overcome any task that at first might feel daunting. </span>\n<span class=\"paragraph\">On the other hand writing a function for everything might not make a lot of sense either. From our example above a function like <code>analyze_high_valued_data()</code> might not work as well as the others because our goals/parameters for the analysis might keep changing. A function for analysis would not be as scalable as the rest!</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"practices-to-keep-in-mind-when-writing-functions\">Practices to Keep in Mind When Writing Functions</h2>\n<h3 id=\"define-the-purpose-of-the-function-clearly\">Define the purpose of the function clearly</h3>\n<span class=\"paragraph\"><strong>Functions should ideally do one thing and do it well!</strong> It does not really help to have a function that is doing many different things - at that point there really isn't an advantage of using functions over imperative programming.</span>\n<span class=\"paragraph\">For instance say we want to work on getting some analysis done for a new tax system being proposed on high value properties. One way to do this would be to just start writing code line by line and hope it works. What the functional approach would argue for is a clear breakdown of tasks.</span>\n<span class=\"paragraph\">For instance we could break this problem down by writing the following functions:</span>\n<span class=\"paragraph\">1- <code>get_high_valued_data()</code></span>\n<span class=\"paragraph\">2- <code>clean_high_valued_data()</code></span>\n<span class=\"paragraph\">3- <code>save_cleaned_data()</code></span>\n<span class=\"paragraph\">This approach would allow one to divide and overcome any task that at first might feel daunting.</span>\n<span class=\"paragraph\">On the other hand writing a function for everything might not make a lot of sense either. From our example above a function like <code>analyze_high_valued_data()</code> might not work as well as the others because our goals/parameters for the analysis might keep changing. A function for analysis would not be as scalable as the rest!</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "slnk",
+      "id": "aLJB",
       "code_hash": "15bbd95b8be3dc2a5758d4684918fb1a",
       "outputs": [
         {
@@ -344,20 +344,20 @@
       "console": []
     },
     {
-      "id": "HuMH",
-      "code_hash": "24b67431574b62a597358b0ceec0950f",
+      "id": "nHfw",
+      "code_hash": "3fa9092d54bb4714357b38f490824265",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"other-things-to-keep-in-mind\">Other things to keep in mind:</h3>\n<ul>\n<li><strong>Use descriptive function names.</strong> A function's name should say what it does, ideally starting with a verb (<code>clean_high_valued_data()</code> rather than <code>process()</code>). If you struggle to name a function, it may be doing too much.</li>\n<li><strong>Write docstrings.</strong> A short docstring right below the definition should explain what the function does, what it takes in, and what it returns. This helps others, and future you, understand the code without reading every line.</li>\n<li><strong>Focus on writing pure functions at first.</strong> Pure functions are easier to test, debug, and reuse because they don't depend on or change anything outside themselves.</li>\n<li><strong>Use default arguments (especially for optional parameters).</strong> Defaults like <code>def get_high_valued_data(file_path: \"your/file/path\"):</code> let the function handle the common case without extra arguments, while still allowing changes when needed.</li>\n<li><strong>Keep functions short!</strong> If a function no longer fits on one screen, it's probably doing more than one thing. Splitting it into smaller functions makes each piece easier to read and test.</li>\n<li>(optional) <strong>Use type hints.</strong> Type hints like <code>def clean_high_valued_data(df: pd.DataFrame) -&gt; pd.DataFrame:</code> make inputs and outputs clear at a glance. Python doesn't enforce them, but they serve as built-in documentation.</li>\n</ul></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"other-things-to-keep-in-mind\">Other things to keep in mind:</h3>\n<ul>\n<li><strong>Use descriptive function names.</strong> A function's name should say what it does, ideally starting with a verb (<code>clean_high_valued_data()</code> rather than <code>process()</code>). If you struggle to name a function, it may be doing too much.</li>\n<li><strong>Write docstrings.</strong> A short docstring right below the definition should explain what the function does, what it takes in, and what it returns. This helps others, and future you, understand the code without reading every line.</li>\n<li><strong>Focus on writing pure functions at first.</strong> Pure functions are easier to test, debug, and reuse because they don't depend on or change anything outside themselves.</li>\n<li><strong>Use default arguments (especially for optional parameters).</strong> Defaults like <code>def get_high_valued_data(file_path=\"your/file/path\"):</code> let the function handle the common case without extra arguments, while still allowing changes when needed.</li>\n<li><strong>Keep functions short!</strong> If a function no longer fits on one screen, it's probably doing more than one thing. Splitting it into smaller functions makes each piece easier to read and test.</li>\n<li>(optional) <strong>Use type hints.</strong> Type hints like <code>def clean_high_valued_data(df: pd.DataFrame) -&gt; pd.DataFrame:</code> make inputs and outputs clear at a glance. Python doesn't enforce them, but they serve as built-in documentation.</li>\n</ul></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "gkto",
+      "id": "xXTn",
       "code_hash": "0b813a10355d1f25ca008bd48d34094b",
       "outputs": [
         {
@@ -370,7 +370,7 @@
       "console": []
     },
     {
-      "id": "Vxnm",
+      "id": "AjVT",
       "code_hash": "dd7657ed112ba93034830c06c2269aa2",
       "outputs": [
         {
@@ -383,7 +383,7 @@
       "console": []
     },
     {
-      "id": "oixd",
+      "id": "pHFh",
       "code_hash": "37e740ee494d0681cd8bd2973478ce59",
       "outputs": [
         {
@@ -396,7 +396,7 @@
       "console": []
     },
     {
-      "id": "DnEU",
+      "id": "NCOB",
       "code_hash": "337eb23de71524c075614d9bf825b9cd",
       "outputs": [
         {
@@ -409,7 +409,7 @@
       "console": []
     },
     {
-      "id": "ulZA",
+      "id": "aqbW",
       "code_hash": "c86c9ae812dcdfaacd54da3d1bdcc579",
       "outputs": [
         {
@@ -422,7 +422,7 @@
       "console": []
     },
     {
-      "id": "ecfG",
+      "id": "TRpd",
       "code_hash": "4d1c2497793a4af12daecec11c96d796",
       "outputs": [
         {
@@ -435,8 +435,8 @@
       "console": []
     },
     {
-      "id": "Pvdt",
-      "code_hash": "f0624958d1103947d47f9d1b08739fcf",
+      "id": "TXez",
+      "code_hash": "c31aaca28ee7c9df6f00b342f176e741",
       "outputs": [
         {
           "type": "data",
@@ -448,7 +448,7 @@
       "console": []
     },
     {
-      "id": "foVo",
+      "id": "dNNg",
       "code_hash": "b55b03985aa9456cd7f507555fd5e05f",
       "outputs": [
         {
@@ -461,7 +461,7 @@
       "console": []
     },
     {
-      "id": "zubW",
+      "id": "yCnT",
       "code_hash": "829b007b502743c71206d3e2259294fa",
       "outputs": [
         {
@@ -474,7 +474,7 @@
       "console": []
     },
     {
-      "id": "daKZ",
+      "id": "wlCL",
       "code_hash": "d7deebb40d7701c6ae4ee2b0757e1a0d",
       "outputs": [
         {
@@ -494,7 +494,7 @@
       ]
     },
     {
-      "id": "ZBYS",
+      "id": "kqZH",
       "code_hash": "dc5e0d4801aed849c9d90f3d2cc6fffc",
       "outputs": [
         {
@@ -507,13 +507,13 @@
       "console": []
     },
     {
-      "id": "kEyr",
-      "code_hash": "30027d4a0774a9d44cab319e8c8cf1c6",
+      "id": "wAgl",
+      "code_hash": "f6ef1f2808e8d0dba74eecd1eb090677",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><hr />\n<h2 id=\"thank-you\">Thank you!</h2>\n<h2 id=\"questions\">Questions?</h2>\n<span class=\"paragraph\">In case of other questions please feel free to email me at: <a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#109;&#114;&#97;&#110;&#102;&#97;&#105;&#122;&#64;&#117;&#99;&#104;&#105;&#99;&#97;&#103;&#111;&#46;&#101;&#100;&#117;\">&#105;&#109;&#114;&#97;&#110;&#102;&#97;&#105;&#122;&#64;&#117;&#99;&#104;&#105;&#99;&#97;&#103;&#111;&#46;&#101;&#100;&#117;</a> </span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"k\">def</span><span class=\"w\"> </span><span class=\"nf\">goodluck</span><span class=\"p\">():</span>\n    <span class=\"k\">return</span> <span class=\"s2\">\"happy coding\"</span>\n</code></pre></div>\n<hr /></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><hr />\n<h2 id=\"thank-you\">Thank you!</h2>\n<h2 id=\"questions\">Questions?</h2>\n<span class=\"paragraph\">In case of other questions please feel free to email me at: <a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#109;&#114;&#97;&#110;&#102;&#97;&#105;&#122;&#64;&#117;&#99;&#104;&#105;&#99;&#97;&#103;&#111;&#46;&#101;&#100;&#117;\">&#105;&#109;&#114;&#97;&#110;&#102;&#97;&#105;&#122;&#64;&#117;&#99;&#104;&#105;&#99;&#97;&#103;&#111;&#46;&#101;&#100;&#117;</a></span>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"k\">def</span><span class=\"w\"> </span><span class=\"nf\">goodluck</span><span class=\"p\">():</span>\n    <span class=\"k\">return</span> <span class=\"s2\">\"happy coding\"</span>\n</code></pre></div>\n<hr /></span>"
           }
         }
       ],
