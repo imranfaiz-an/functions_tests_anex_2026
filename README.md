@@ -3,6 +3,8 @@
 - Data Science Intern - __Modeling Team__ - Department of Finance (2026)
 - Current grad student at UChicago - majors: **Computer Science & Public Policy**
 
+---
+
 The main marimo notebook in this repo contains the following content:
 - What are functions?
     - Types of functions
